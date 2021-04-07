@@ -1,0 +1,30 @@
+[2021-04-07 14:00:01,380] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T12:00:00+00:00 [queued]>
+[2021-04-07 14:00:01,423] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T12:00:00+00:00 [queued]>
+[2021-04-07 14:00:01,423] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 14:00:01,424] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-07 14:00:01,424] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 14:00:01,455] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): popula_relatorios> on 2021-04-07T12:00:00+00:00
+[2021-04-07 14:00:01,461] {standard_task_runner.py:52} INFO - Started process 27838 to run task
+[2021-04-07 14:00:01,469] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trata_relatorios', 'popula_relatorios', '2021-04-07T12:00:00+00:00', '--job-id', '45', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_chamados.py', '--cfg-path', '/tmp/tmpga1mv0bc', '--error-file', '/tmp/tmp3o3ejcua']
+[2021-04-07 14:00:01,472] {standard_task_runner.py:77} INFO - Job 45: Subtask popula_relatorios
+[2021-04-07 14:00:01,552] {logging_mixin.py:104} INFO - Running <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T12:00:00+00:00 [running]> on host ce03b876977a
+[2021-04-07 14:00:01,634] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=clecio.antao@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trata_relatorios
+AIRFLOW_CTX_TASK_ID=popula_relatorios
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-07T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-07T12:00:00+00:00
+[2021-04-07 14:00:06,916] {logging_mixin.py:104} INFO - Token:  dGVjYmFu#bc8cd4575b0edabbf13654fd3f87299f2331a7b6
+[2021-04-07 14:00:09,309] {logging_mixin.py:104} INFO - Paginas:  5000
+[2021-04-07 14:00:09,310] {logging_mixin.py:104} INFO - Contador:  1
+[2021-04-07 14:00:09,310] {logging_mixin.py:104} INFO - Linhas:  0
+[2021-04-07 14:00:20,018] {logging_mixin.py:104} INFO - Paginas:  5000
+[2021-04-07 14:00:20,019] {logging_mixin.py:104} INFO - Contador:  2
+[2021-04-07 14:00:20,020] {logging_mixin.py:104} INFO - Linhas:  5000
+[2021-04-07 14:00:21,896] {python.py:118} INFO - Done. Returned value was: None
+[2021-04-07 14:00:21,937] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trata_relatorios, task_id=popula_relatorios, execution_date=20210407T120000, start_date=20210407T140001, end_date=20210407T140021
+[2021-04-07 14:00:22,012] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-04-07 14:00:22,044] {local_task_job.py:146} INFO - Task exited with return code 0
