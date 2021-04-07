@@ -1,0 +1,1665 @@
+[2021-04-07 01:00:00,672] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T00:50:00+00:00 [queued]>
+[2021-04-07 01:00:00,716] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T00:50:00+00:00 [queued]>
+[2021-04-07 01:00:00,717] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 01:00:00,717] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-07 01:00:00,717] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 01:00:00,757] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): popula_relatorios> on 2021-04-07T00:50:00+00:00
+[2021-04-07 01:00:00,762] {standard_task_runner.py:52} INFO - Started process 4779 to run task
+[2021-04-07 01:00:00,769] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trata_relatorios', 'popula_relatorios', '2021-04-07T00:50:00+00:00', '--job-id', '17', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_chamados.py', '--cfg-path', '/tmp/tmpfy5ivjvj', '--error-file', '/tmp/tmp2nvwu41e']
+[2021-04-07 01:00:00,773] {standard_task_runner.py:77} INFO - Job 17: Subtask popula_relatorios
+[2021-04-07 01:00:00,843] {logging_mixin.py:104} INFO - Running <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T00:50:00+00:00 [running]> on host ce03b876977a
+[2021-04-07 01:00:00,927] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=clecio.antao@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trata_relatorios
+AIRFLOW_CTX_TASK_ID=popula_relatorios
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-07T00:50:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-07T00:50:00+00:00
+[2021-04-07 01:00:18,068] {logging_mixin.py:104} INFO - Total de linhas:  5000
+[2021-04-07 01:00:18,073] {logging_mixin.py:104} INFO - dGVjYmFu#48ecf24b6a23dbb097bf5e61802198d53adc9ce9
+[2021-04-07 01:00:18,074] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:00:18,074] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:00:18,074] {logging_mixin.py:104} INFO - Contador:  1
+[2021-04-07 01:00:18,074] {logging_mixin.py:104} INFO - Linhas:  0
+[2021-04-07 01:00:18,074] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:01:02,917] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:01:02,918] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:01:02,918] {logging_mixin.py:104} INFO - Contador:  2
+[2021-04-07 01:01:02,918] {logging_mixin.py:104} INFO - Linhas:  5000
+[2021-04-07 01:01:02,919] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:01:38,420] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:01:38,428] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:01:38,428] {logging_mixin.py:104} INFO - Contador:  3
+[2021-04-07 01:01:38,429] {logging_mixin.py:104} INFO - Linhas:  10000
+[2021-04-07 01:01:38,430] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:02:14,712] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:02:14,715] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:02:14,719] {logging_mixin.py:104} INFO - Contador:  4
+[2021-04-07 01:02:14,720] {logging_mixin.py:104} INFO - Linhas:  15000
+[2021-04-07 01:02:14,721] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:02:52,913] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:02:52,923] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:02:52,924] {logging_mixin.py:104} INFO - Contador:  5
+[2021-04-07 01:02:52,924] {logging_mixin.py:104} INFO - Linhas:  20000
+[2021-04-07 01:02:52,925] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:03:39,109] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:03:39,111] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:03:39,112] {logging_mixin.py:104} INFO - Contador:  6
+[2021-04-07 01:03:39,112] {logging_mixin.py:104} INFO - Linhas:  25000
+[2021-04-07 01:03:39,113] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:04:13,291] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:04:13,297] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:04:13,300] {logging_mixin.py:104} INFO - Contador:  7
+[2021-04-07 01:04:13,301] {logging_mixin.py:104} INFO - Linhas:  30000
+[2021-04-07 01:04:13,302] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:04:52,098] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:04:52,099] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:04:52,099] {logging_mixin.py:104} INFO - Contador:  8
+[2021-04-07 01:04:52,099] {logging_mixin.py:104} INFO - Linhas:  35000
+[2021-04-07 01:04:52,100] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:05:34,003] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:05:34,004] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:05:34,005] {logging_mixin.py:104} INFO - Contador:  9
+[2021-04-07 01:05:34,006] {logging_mixin.py:104} INFO - Linhas:  40000
+[2021-04-07 01:05:34,007] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:06:13,849] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:06:13,850] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:06:13,851] {logging_mixin.py:104} INFO - Contador:  10
+[2021-04-07 01:06:13,863] {logging_mixin.py:104} INFO - Linhas:  45000
+[2021-04-07 01:06:13,864] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:06:58,110] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:06:58,111] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:06:58,111] {logging_mixin.py:104} INFO - Contador:  11
+[2021-04-07 01:06:58,112] {logging_mixin.py:104} INFO - Linhas:  50000
+[2021-04-07 01:06:58,112] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:07:41,310] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:07:41,311] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:07:41,312] {logging_mixin.py:104} INFO - Contador:  12
+[2021-04-07 01:07:41,312] {logging_mixin.py:104} INFO - Linhas:  55000
+[2021-04-07 01:07:41,312] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:08:18,825] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:08:18,827] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:08:18,832] {logging_mixin.py:104} INFO - Contador:  13
+[2021-04-07 01:08:18,833] {logging_mixin.py:104} INFO - Linhas:  60000
+[2021-04-07 01:08:18,833] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:08:59,391] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:08:59,392] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:08:59,393] {logging_mixin.py:104} INFO - Contador:  14
+[2021-04-07 01:08:59,395] {logging_mixin.py:104} INFO - Linhas:  65000
+[2021-04-07 01:08:59,397] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:09:38,390] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:09:38,419] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:09:38,423] {logging_mixin.py:104} INFO - Contador:  15
+[2021-04-07 01:09:38,425] {logging_mixin.py:104} INFO - Linhas:  70000
+[2021-04-07 01:09:38,433] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:10:21,020] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:10:21,024] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:10:21,025] {logging_mixin.py:104} INFO - Contador:  16
+[2021-04-07 01:10:21,025] {logging_mixin.py:104} INFO - Linhas:  75000
+[2021-04-07 01:10:21,026] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:11:01,118] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:11:01,123] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:11:01,124] {logging_mixin.py:104} INFO - Contador:  17
+[2021-04-07 01:11:01,127] {logging_mixin.py:104} INFO - Linhas:  80000
+[2021-04-07 01:11:01,128] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:11:38,485] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:11:38,486] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:11:38,488] {logging_mixin.py:104} INFO - Contador:  18
+[2021-04-07 01:11:38,490] {logging_mixin.py:104} INFO - Linhas:  85000
+[2021-04-07 01:11:38,490] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:12:14,853] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:12:14,854] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:12:14,854] {logging_mixin.py:104} INFO - Contador:  19
+[2021-04-07 01:12:14,854] {logging_mixin.py:104} INFO - Linhas:  90000
+[2021-04-07 01:12:14,855] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:12:55,529] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:12:55,530] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:12:55,531] {logging_mixin.py:104} INFO - Contador:  20
+[2021-04-07 01:12:55,532] {logging_mixin.py:104} INFO - Linhas:  95000
+[2021-04-07 01:12:55,533] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:13:34,394] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:13:34,395] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:13:34,396] {logging_mixin.py:104} INFO - Contador:  21
+[2021-04-07 01:13:34,396] {logging_mixin.py:104} INFO - Linhas:  100000
+[2021-04-07 01:13:34,397] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:14:12,162] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:14:12,163] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:14:12,163] {logging_mixin.py:104} INFO - Contador:  22
+[2021-04-07 01:14:12,164] {logging_mixin.py:104} INFO - Linhas:  105000
+[2021-04-07 01:14:12,164] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:15:00,167] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:15:00,179] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:15:00,180] {logging_mixin.py:104} INFO - Contador:  23
+[2021-04-07 01:15:00,180] {logging_mixin.py:104} INFO - Linhas:  110000
+[2021-04-07 01:15:00,180] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:15:44,080] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:15:44,081] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:15:44,082] {logging_mixin.py:104} INFO - Contador:  24
+[2021-04-07 01:15:44,082] {logging_mixin.py:104} INFO - Linhas:  115000
+[2021-04-07 01:15:44,083] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:16:22,835] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:16:22,839] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:16:22,840] {logging_mixin.py:104} INFO - Contador:  25
+[2021-04-07 01:16:22,844] {logging_mixin.py:104} INFO - Linhas:  120000
+[2021-04-07 01:16:22,847] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:17:05,293] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:17:05,295] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:17:05,295] {logging_mixin.py:104} INFO - Contador:  26
+[2021-04-07 01:17:05,296] {logging_mixin.py:104} INFO - Linhas:  125000
+[2021-04-07 01:17:05,296] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:17:44,745] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:17:44,746] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:17:44,746] {logging_mixin.py:104} INFO - Contador:  27
+[2021-04-07 01:17:44,747] {logging_mixin.py:104} INFO - Linhas:  130000
+[2021-04-07 01:17:44,747] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:18:26,463] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:18:26,466] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:18:26,474] {logging_mixin.py:104} INFO - Contador:  28
+[2021-04-07 01:18:26,474] {logging_mixin.py:104} INFO - Linhas:  135000
+[2021-04-07 01:18:26,475] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:19:05,741] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:19:05,743] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:19:05,744] {logging_mixin.py:104} INFO - Contador:  29
+[2021-04-07 01:19:05,746] {logging_mixin.py:104} INFO - Linhas:  140000
+[2021-04-07 01:19:05,747] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:19:47,789] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:19:47,796] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:19:47,797] {logging_mixin.py:104} INFO - Contador:  30
+[2021-04-07 01:19:47,797] {logging_mixin.py:104} INFO - Linhas:  145000
+[2021-04-07 01:19:47,798] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:20:33,460] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:20:33,468] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:20:33,469] {logging_mixin.py:104} INFO - Contador:  31
+[2021-04-07 01:20:33,469] {logging_mixin.py:104} INFO - Linhas:  150000
+[2021-04-07 01:20:33,470] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:21:17,125] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:21:17,126] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:21:17,127] {logging_mixin.py:104} INFO - Contador:  32
+[2021-04-07 01:21:17,127] {logging_mixin.py:104} INFO - Linhas:  155000
+[2021-04-07 01:21:17,127] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:22:03,155] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:22:03,158] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:22:03,158] {logging_mixin.py:104} INFO - Contador:  33
+[2021-04-07 01:22:03,158] {logging_mixin.py:104} INFO - Linhas:  160000
+[2021-04-07 01:22:03,158] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:22:57,666] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:22:57,666] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:22:57,667] {logging_mixin.py:104} INFO - Contador:  34
+[2021-04-07 01:22:57,667] {logging_mixin.py:104} INFO - Linhas:  165000
+[2021-04-07 01:22:57,668] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:23:44,965] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:23:44,973] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:23:44,975] {logging_mixin.py:104} INFO - Contador:  35
+[2021-04-07 01:23:44,978] {logging_mixin.py:104} INFO - Linhas:  170000
+[2021-04-07 01:23:44,979] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:24:32,368] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:24:32,369] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:24:32,374] {logging_mixin.py:104} INFO - Contador:  36
+[2021-04-07 01:24:32,374] {logging_mixin.py:104} INFO - Linhas:  175000
+[2021-04-07 01:24:32,375] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:25:16,673] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:25:16,678] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:25:16,679] {logging_mixin.py:104} INFO - Contador:  37
+[2021-04-07 01:25:16,680] {logging_mixin.py:104} INFO - Linhas:  180000
+[2021-04-07 01:25:16,680] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:26:01,335] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:26:01,336] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:26:01,337] {logging_mixin.py:104} INFO - Contador:  38
+[2021-04-07 01:26:01,338] {logging_mixin.py:104} INFO - Linhas:  185000
+[2021-04-07 01:26:01,338] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:26:47,784] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:26:47,788] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:26:47,789] {logging_mixin.py:104} INFO - Contador:  39
+[2021-04-07 01:26:47,790] {logging_mixin.py:104} INFO - Linhas:  190000
+[2021-04-07 01:26:47,790] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:27:34,022] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:27:34,028] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:27:34,030] {logging_mixin.py:104} INFO - Contador:  40
+[2021-04-07 01:27:34,031] {logging_mixin.py:104} INFO - Linhas:  195000
+[2021-04-07 01:27:34,032] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:28:27,496] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:28:27,497] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:28:27,497] {logging_mixin.py:104} INFO - Contador:  41
+[2021-04-07 01:28:27,497] {logging_mixin.py:104} INFO - Linhas:  200000
+[2021-04-07 01:28:27,498] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:29:17,875] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:29:17,882] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:29:17,883] {logging_mixin.py:104} INFO - Contador:  42
+[2021-04-07 01:29:17,884] {logging_mixin.py:104} INFO - Linhas:  205000
+[2021-04-07 01:29:17,884] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:30:03,804] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:30:03,817] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:30:03,818] {logging_mixin.py:104} INFO - Contador:  43
+[2021-04-07 01:30:03,818] {logging_mixin.py:104} INFO - Linhas:  210000
+[2021-04-07 01:30:03,819] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:30:50,625] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:30:50,628] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:30:50,646] {logging_mixin.py:104} INFO - Contador:  44
+[2021-04-07 01:30:50,649] {logging_mixin.py:104} INFO - Linhas:  215000
+[2021-04-07 01:30:50,649] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:31:37,430] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:31:37,438] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:31:37,438] {logging_mixin.py:104} INFO - Contador:  45
+[2021-04-07 01:31:37,439] {logging_mixin.py:104} INFO - Linhas:  220000
+[2021-04-07 01:31:37,441] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:32:21,509] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:32:21,515] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:32:21,515] {logging_mixin.py:104} INFO - Contador:  46
+[2021-04-07 01:32:21,516] {logging_mixin.py:104} INFO - Linhas:  225000
+[2021-04-07 01:32:21,516] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:33:08,565] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:33:08,566] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:33:08,572] {logging_mixin.py:104} INFO - Contador:  47
+[2021-04-07 01:33:08,573] {logging_mixin.py:104} INFO - Linhas:  230000
+[2021-04-07 01:33:08,573] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:33:52,970] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:33:52,973] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:33:52,973] {logging_mixin.py:104} INFO - Contador:  48
+[2021-04-07 01:33:52,974] {logging_mixin.py:104} INFO - Linhas:  235000
+[2021-04-07 01:33:52,974] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:34:38,299] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:34:38,300] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:34:38,310] {logging_mixin.py:104} INFO - Contador:  49
+[2021-04-07 01:34:38,310] {logging_mixin.py:104} INFO - Linhas:  240000
+[2021-04-07 01:34:38,311] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:35:20,405] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:35:20,406] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:35:20,406] {logging_mixin.py:104} INFO - Contador:  50
+[2021-04-07 01:35:20,406] {logging_mixin.py:104} INFO - Linhas:  245000
+[2021-04-07 01:35:20,406] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:36:06,679] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:36:06,680] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:36:06,680] {logging_mixin.py:104} INFO - Contador:  51
+[2021-04-07 01:36:06,681] {logging_mixin.py:104} INFO - Linhas:  250000
+[2021-04-07 01:36:06,691] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:36:53,953] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:36:53,956] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:36:53,957] {logging_mixin.py:104} INFO - Contador:  52
+[2021-04-07 01:36:53,957] {logging_mixin.py:104} INFO - Linhas:  255000
+[2021-04-07 01:36:53,957] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:37:48,121] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:37:48,124] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:37:48,124] {logging_mixin.py:104} INFO - Contador:  53
+[2021-04-07 01:37:48,124] {logging_mixin.py:104} INFO - Linhas:  260000
+[2021-04-07 01:37:48,124] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:38:39,713] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:38:39,714] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:38:39,715] {logging_mixin.py:104} INFO - Contador:  54
+[2021-04-07 01:38:39,715] {logging_mixin.py:104} INFO - Linhas:  265000
+[2021-04-07 01:38:39,716] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:39:31,738] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:39:31,739] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:39:31,741] {logging_mixin.py:104} INFO - Contador:  55
+[2021-04-07 01:39:31,741] {logging_mixin.py:104} INFO - Linhas:  270000
+[2021-04-07 01:39:31,741] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:40:30,117] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:40:30,121] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:40:30,121] {logging_mixin.py:104} INFO - Contador:  56
+[2021-04-07 01:40:30,121] {logging_mixin.py:104} INFO - Linhas:  275000
+[2021-04-07 01:40:30,121] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:41:28,954] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:41:28,968] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:41:28,969] {logging_mixin.py:104} INFO - Contador:  57
+[2021-04-07 01:41:28,969] {logging_mixin.py:104} INFO - Linhas:  280000
+[2021-04-07 01:41:28,969] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:42:19,674] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:42:19,680] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:42:19,681] {logging_mixin.py:104} INFO - Contador:  58
+[2021-04-07 01:42:19,681] {logging_mixin.py:104} INFO - Linhas:  285000
+[2021-04-07 01:42:19,682] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:43:18,758] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:43:18,761] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:43:18,762] {logging_mixin.py:104} INFO - Contador:  59
+[2021-04-07 01:43:18,763] {logging_mixin.py:104} INFO - Linhas:  290000
+[2021-04-07 01:43:18,766] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:44:17,713] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:44:17,714] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:44:17,714] {logging_mixin.py:104} INFO - Contador:  60
+[2021-04-07 01:44:17,715] {logging_mixin.py:104} INFO - Linhas:  295000
+[2021-04-07 01:44:17,715] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:45:02,162] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:45:02,163] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:45:02,163] {logging_mixin.py:104} INFO - Contador:  61
+[2021-04-07 01:45:02,164] {logging_mixin.py:104} INFO - Linhas:  300000
+[2021-04-07 01:45:02,164] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:45:45,142] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:45:45,143] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:45:45,143] {logging_mixin.py:104} INFO - Contador:  62
+[2021-04-07 01:45:45,144] {logging_mixin.py:104} INFO - Linhas:  305000
+[2021-04-07 01:45:45,144] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:46:33,010] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:46:33,011] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:46:33,012] {logging_mixin.py:104} INFO - Contador:  63
+[2021-04-07 01:46:33,012] {logging_mixin.py:104} INFO - Linhas:  310000
+[2021-04-07 01:46:33,013] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:47:19,479] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:47:19,480] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:47:19,480] {logging_mixin.py:104} INFO - Contador:  64
+[2021-04-07 01:47:19,481] {logging_mixin.py:104} INFO - Linhas:  315000
+[2021-04-07 01:47:19,483] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:48:07,987] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:48:07,989] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:48:07,989] {logging_mixin.py:104} INFO - Contador:  65
+[2021-04-07 01:48:07,989] {logging_mixin.py:104} INFO - Linhas:  320000
+[2021-04-07 01:48:07,989] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:48:55,397] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:48:55,398] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:48:55,399] {logging_mixin.py:104} INFO - Contador:  66
+[2021-04-07 01:48:55,399] {logging_mixin.py:104} INFO - Linhas:  325000
+[2021-04-07 01:48:55,399] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:49:44,978] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:49:44,978] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:49:44,979] {logging_mixin.py:104} INFO - Contador:  67
+[2021-04-07 01:49:44,979] {logging_mixin.py:104} INFO - Linhas:  330000
+[2021-04-07 01:49:44,980] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:50:43,362] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:50:43,363] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:50:43,364] {logging_mixin.py:104} INFO - Contador:  68
+[2021-04-07 01:50:43,364] {logging_mixin.py:104} INFO - Linhas:  335000
+[2021-04-07 01:50:43,365] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:51:38,967] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:51:38,971] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:51:38,972] {logging_mixin.py:104} INFO - Contador:  69
+[2021-04-07 01:51:38,972] {logging_mixin.py:104} INFO - Linhas:  340000
+[2021-04-07 01:51:38,973] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:52:32,137] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:52:32,138] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:52:32,138] {logging_mixin.py:104} INFO - Contador:  70
+[2021-04-07 01:52:32,138] {logging_mixin.py:104} INFO - Linhas:  345000
+[2021-04-07 01:52:32,139] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:53:22,749] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:53:22,749] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:53:22,749] {logging_mixin.py:104} INFO - Contador:  71
+[2021-04-07 01:53:22,750] {logging_mixin.py:104} INFO - Linhas:  350000
+[2021-04-07 01:53:22,750] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:54:13,694] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:54:13,697] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:54:13,703] {logging_mixin.py:104} INFO - Contador:  72
+[2021-04-07 01:54:13,703] {logging_mixin.py:104} INFO - Linhas:  355000
+[2021-04-07 01:54:13,705] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:55:02,210] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:55:02,211] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:55:02,211] {logging_mixin.py:104} INFO - Contador:  73
+[2021-04-07 01:55:02,212] {logging_mixin.py:104} INFO - Linhas:  360000
+[2021-04-07 01:55:02,212] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 01:55:18,795] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:55:18,796] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:55:18,797] {logging_mixin.py:104} INFO - Contador:  74
+[2021-04-07 01:55:18,797] {logging_mixin.py:104} INFO - Linhas:  365000
+[2021-04-07 01:55:18,799] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:55:36,941] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:55:36,942] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:55:36,943] {logging_mixin.py:104} INFO - Contador:  75
+[2021-04-07 01:55:36,943] {logging_mixin.py:104} INFO - Linhas:  370000
+[2021-04-07 01:55:36,944] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:55:54,626] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:55:54,628] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:55:54,629] {logging_mixin.py:104} INFO - Contador:  76
+[2021-04-07 01:55:54,630] {logging_mixin.py:104} INFO - Linhas:  375000
+[2021-04-07 01:55:54,630] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:56:18,628] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:56:18,629] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:56:18,629] {logging_mixin.py:104} INFO - Contador:  77
+[2021-04-07 01:56:18,630] {logging_mixin.py:104} INFO - Linhas:  380000
+[2021-04-07 01:56:18,630] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:56:36,315] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:56:36,315] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:56:36,315] {logging_mixin.py:104} INFO - Contador:  78
+[2021-04-07 01:56:36,316] {logging_mixin.py:104} INFO - Linhas:  385000
+[2021-04-07 01:56:36,316] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:56:55,012] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:56:55,014] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:56:55,016] {logging_mixin.py:104} INFO - Contador:  79
+[2021-04-07 01:56:55,018] {logging_mixin.py:104} INFO - Linhas:  390000
+[2021-04-07 01:56:55,026] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:57:11,135] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:57:11,140] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:57:11,145] {logging_mixin.py:104} INFO - Contador:  80
+[2021-04-07 01:57:11,145] {logging_mixin.py:104} INFO - Linhas:  395000
+[2021-04-07 01:57:11,146] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:57:34,370] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:57:34,371] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:57:34,374] {logging_mixin.py:104} INFO - Contador:  81
+[2021-04-07 01:57:34,374] {logging_mixin.py:104} INFO - Linhas:  400000
+[2021-04-07 01:57:34,375] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:57:52,304] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:57:52,304] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:57:52,305] {logging_mixin.py:104} INFO - Contador:  82
+[2021-04-07 01:57:52,305] {logging_mixin.py:104} INFO - Linhas:  405000
+[2021-04-07 01:57:52,305] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:58:09,760] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:58:09,762] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:58:09,764] {logging_mixin.py:104} INFO - Contador:  83
+[2021-04-07 01:58:09,765] {logging_mixin.py:104} INFO - Linhas:  410000
+[2021-04-07 01:58:09,766] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:58:33,113] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:58:33,114] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:58:33,115] {logging_mixin.py:104} INFO - Contador:  84
+[2021-04-07 01:58:33,116] {logging_mixin.py:104} INFO - Linhas:  415000
+[2021-04-07 01:58:33,116] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:58:51,492] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:58:51,493] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:58:51,493] {logging_mixin.py:104} INFO - Contador:  85
+[2021-04-07 01:58:51,494] {logging_mixin.py:104} INFO - Linhas:  420000
+[2021-04-07 01:58:51,494] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:59:09,241] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:59:09,241] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:59:09,242] {logging_mixin.py:104} INFO - Contador:  86
+[2021-04-07 01:59:09,242] {logging_mixin.py:104} INFO - Linhas:  425000
+[2021-04-07 01:59:09,242] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:59:27,307] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:59:27,308] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:59:27,309] {logging_mixin.py:104} INFO - Contador:  87
+[2021-04-07 01:59:27,309] {logging_mixin.py:104} INFO - Linhas:  430000
+[2021-04-07 01:59:27,311] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 01:59:44,842] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 01:59:44,843] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 01:59:44,844] {logging_mixin.py:104} INFO - Contador:  88
+[2021-04-07 01:59:44,844] {logging_mixin.py:104} INFO - Linhas:  435000
+[2021-04-07 01:59:44,845] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:00:02,641] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:00:02,642] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:00:02,642] {logging_mixin.py:104} INFO - Contador:  89
+[2021-04-07 02:00:02,642] {logging_mixin.py:104} INFO - Linhas:  440000
+[2021-04-07 02:00:02,643] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:00:23,210] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:00:23,211] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:00:23,212] {logging_mixin.py:104} INFO - Contador:  90
+[2021-04-07 02:00:23,212] {logging_mixin.py:104} INFO - Linhas:  445000
+[2021-04-07 02:00:23,212] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:00:39,195] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:00:39,196] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:00:39,198] {logging_mixin.py:104} INFO - Contador:  91
+[2021-04-07 02:00:39,199] {logging_mixin.py:104} INFO - Linhas:  450000
+[2021-04-07 02:00:39,200] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:00:54,783] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:00:54,785] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:00:54,787] {logging_mixin.py:104} INFO - Contador:  92
+[2021-04-07 02:00:54,788] {logging_mixin.py:104} INFO - Linhas:  455000
+[2021-04-07 02:00:54,788] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:01:09,487] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:01:09,489] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:01:09,490] {logging_mixin.py:104} INFO - Contador:  93
+[2021-04-07 02:01:09,499] {logging_mixin.py:104} INFO - Linhas:  460000
+[2021-04-07 02:01:09,501] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:01:24,038] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:01:24,045] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:01:24,048] {logging_mixin.py:104} INFO - Contador:  94
+[2021-04-07 02:01:24,049] {logging_mixin.py:104} INFO - Linhas:  465000
+[2021-04-07 02:01:24,049] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:01:39,730] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:01:39,739] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:01:39,740] {logging_mixin.py:104} INFO - Contador:  95
+[2021-04-07 02:01:39,741] {logging_mixin.py:104} INFO - Linhas:  470000
+[2021-04-07 02:01:39,741] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:01:53,544] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:01:53,561] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:01:53,563] {logging_mixin.py:104} INFO - Contador:  96
+[2021-04-07 02:01:53,564] {logging_mixin.py:104} INFO - Linhas:  475000
+[2021-04-07 02:01:53,571] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:02:07,940] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:02:07,943] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:02:07,944] {logging_mixin.py:104} INFO - Contador:  97
+[2021-04-07 02:02:07,948] {logging_mixin.py:104} INFO - Linhas:  480000
+[2021-04-07 02:02:07,949] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:02:23,891] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:02:23,891] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:02:23,891] {logging_mixin.py:104} INFO - Contador:  98
+[2021-04-07 02:02:23,891] {logging_mixin.py:104} INFO - Linhas:  485000
+[2021-04-07 02:02:23,903] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:02:47,206] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:02:47,209] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:02:47,213] {logging_mixin.py:104} INFO - Contador:  99
+[2021-04-07 02:02:47,214] {logging_mixin.py:104} INFO - Linhas:  490000
+[2021-04-07 02:02:47,219] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:03:00,965] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:03:00,968] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:03:00,969] {logging_mixin.py:104} INFO - Contador:  100
+[2021-04-07 02:03:00,969] {logging_mixin.py:104} INFO - Linhas:  495000
+[2021-04-07 02:03:00,970] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:03:15,585] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:03:15,592] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:03:15,593] {logging_mixin.py:104} INFO - Contador:  101
+[2021-04-07 02:03:15,596] {logging_mixin.py:104} INFO - Linhas:  500000
+[2021-04-07 02:03:15,607] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:03:33,405] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:03:33,409] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:03:33,410] {logging_mixin.py:104} INFO - Contador:  102
+[2021-04-07 02:03:33,411] {logging_mixin.py:104} INFO - Linhas:  505000
+[2021-04-07 02:03:33,415] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:03:48,168] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:03:48,169] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:03:48,170] {logging_mixin.py:104} INFO - Contador:  103
+[2021-04-07 02:03:48,170] {logging_mixin.py:104} INFO - Linhas:  510000
+[2021-04-07 02:03:48,170] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:04:02,935] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:04:02,948] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:04:02,949] {logging_mixin.py:104} INFO - Contador:  104
+[2021-04-07 02:04:02,949] {logging_mixin.py:104} INFO - Linhas:  515000
+[2021-04-07 02:04:02,950] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:04:24,344] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:04:24,344] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:04:24,344] {logging_mixin.py:104} INFO - Contador:  105
+[2021-04-07 02:04:24,344] {logging_mixin.py:104} INFO - Linhas:  520000
+[2021-04-07 02:04:24,344] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:04:39,601] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:04:39,603] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:04:39,603] {logging_mixin.py:104} INFO - Contador:  106
+[2021-04-07 02:04:39,605] {logging_mixin.py:104} INFO - Linhas:  525000
+[2021-04-07 02:04:39,608] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:04:56,276] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:04:56,276] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:04:56,277] {logging_mixin.py:104} INFO - Contador:  107
+[2021-04-07 02:04:56,277] {logging_mixin.py:104} INFO - Linhas:  530000
+[2021-04-07 02:04:56,278] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:05:09,606] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:05:09,607] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:05:09,608] {logging_mixin.py:104} INFO - Contador:  108
+[2021-04-07 02:05:09,608] {logging_mixin.py:104} INFO - Linhas:  535000
+[2021-04-07 02:05:09,609] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:05:24,954] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:05:24,956] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:05:24,957] {logging_mixin.py:104} INFO - Contador:  109
+[2021-04-07 02:05:24,957] {logging_mixin.py:104} INFO - Linhas:  540000
+[2021-04-07 02:05:24,960] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:05:38,160] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:05:38,165] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:05:38,166] {logging_mixin.py:104} INFO - Contador:  110
+[2021-04-07 02:05:38,166] {logging_mixin.py:104} INFO - Linhas:  545000
+[2021-04-07 02:05:38,167] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:05:52,380] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:05:52,382] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:05:52,383] {logging_mixin.py:104} INFO - Contador:  111
+[2021-04-07 02:05:52,387] {logging_mixin.py:104} INFO - Linhas:  550000
+[2021-04-07 02:05:52,388] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:06:07,957] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:06:07,960] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:06:07,965] {logging_mixin.py:104} INFO - Contador:  112
+[2021-04-07 02:06:07,965] {logging_mixin.py:104} INFO - Linhas:  555000
+[2021-04-07 02:06:07,971] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:06:33,603] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:06:33,605] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:06:33,605] {logging_mixin.py:104} INFO - Contador:  113
+[2021-04-07 02:06:33,610] {logging_mixin.py:104} INFO - Linhas:  560000
+[2021-04-07 02:06:33,611] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:06:48,828] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:06:48,831] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:06:48,833] {logging_mixin.py:104} INFO - Contador:  114
+[2021-04-07 02:06:48,833] {logging_mixin.py:104} INFO - Linhas:  565000
+[2021-04-07 02:06:48,833] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:07:05,890] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:07:05,893] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:07:05,894] {logging_mixin.py:104} INFO - Contador:  115
+[2021-04-07 02:07:05,896] {logging_mixin.py:104} INFO - Linhas:  570000
+[2021-04-07 02:07:05,898] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:07:20,047] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:07:20,055] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:07:20,056] {logging_mixin.py:104} INFO - Contador:  116
+[2021-04-07 02:07:20,058] {logging_mixin.py:104} INFO - Linhas:  575000
+[2021-04-07 02:07:20,060] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:07:33,932] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:07:33,932] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:07:33,932] {logging_mixin.py:104} INFO - Contador:  117
+[2021-04-07 02:07:33,932] {logging_mixin.py:104} INFO - Linhas:  580000
+[2021-04-07 02:07:33,932] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:07:48,204] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:07:48,206] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:07:48,207] {logging_mixin.py:104} INFO - Contador:  118
+[2021-04-07 02:07:48,214] {logging_mixin.py:104} INFO - Linhas:  585000
+[2021-04-07 02:07:48,231] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:08:02,371] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:08:02,374] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:08:02,374] {logging_mixin.py:104} INFO - Contador:  119
+[2021-04-07 02:08:02,375] {logging_mixin.py:104} INFO - Linhas:  590000
+[2021-04-07 02:08:02,376] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:08:16,481] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:08:16,484] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:08:16,486] {logging_mixin.py:104} INFO - Contador:  120
+[2021-04-07 02:08:16,486] {logging_mixin.py:104} INFO - Linhas:  595000
+[2021-04-07 02:08:16,486] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:08:30,332] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:08:30,341] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:08:30,341] {logging_mixin.py:104} INFO - Contador:  121
+[2021-04-07 02:08:30,342] {logging_mixin.py:104} INFO - Linhas:  600000
+[2021-04-07 02:08:30,347] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:08:52,000] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:08:52,003] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:08:52,004] {logging_mixin.py:104} INFO - Contador:  122
+[2021-04-07 02:08:52,004] {logging_mixin.py:104} INFO - Linhas:  605000
+[2021-04-07 02:08:52,005] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:09:05,482] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:09:05,483] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:09:05,484] {logging_mixin.py:104} INFO - Contador:  123
+[2021-04-07 02:09:05,484] {logging_mixin.py:104} INFO - Linhas:  610000
+[2021-04-07 02:09:05,485] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:09:19,714] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:09:19,716] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:09:19,721] {logging_mixin.py:104} INFO - Contador:  124
+[2021-04-07 02:09:19,723] {logging_mixin.py:104} INFO - Linhas:  615000
+[2021-04-07 02:09:19,723] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:09:34,993] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:09:35,002] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:09:35,003] {logging_mixin.py:104} INFO - Contador:  125
+[2021-04-07 02:09:35,004] {logging_mixin.py:104} INFO - Linhas:  620000
+[2021-04-07 02:09:35,004] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:09:48,269] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:09:48,285] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:09:48,290] {logging_mixin.py:104} INFO - Contador:  126
+[2021-04-07 02:09:48,291] {logging_mixin.py:104} INFO - Linhas:  625000
+[2021-04-07 02:09:48,292] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:10:02,874] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:10:02,876] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:10:02,877] {logging_mixin.py:104} INFO - Contador:  127
+[2021-04-07 02:10:02,877] {logging_mixin.py:104} INFO - Linhas:  630000
+[2021-04-07 02:10:02,877] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:10:17,851] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:10:17,856] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:10:17,863] {logging_mixin.py:104} INFO - Contador:  128
+[2021-04-07 02:10:17,865] {logging_mixin.py:104} INFO - Linhas:  635000
+[2021-04-07 02:10:17,865] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:10:32,448] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:10:32,453] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:10:32,453] {logging_mixin.py:104} INFO - Contador:  129
+[2021-04-07 02:10:32,454] {logging_mixin.py:104} INFO - Linhas:  640000
+[2021-04-07 02:10:32,458] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:10:53,260] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:10:53,261] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:10:53,271] {logging_mixin.py:104} INFO - Contador:  130
+[2021-04-07 02:10:53,272] {logging_mixin.py:104} INFO - Linhas:  645000
+[2021-04-07 02:10:53,273] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:11:06,851] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:11:06,852] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:11:06,853] {logging_mixin.py:104} INFO - Contador:  131
+[2021-04-07 02:11:06,856] {logging_mixin.py:104} INFO - Linhas:  650000
+[2021-04-07 02:11:06,861] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:11:20,812] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:11:20,815] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:11:20,817] {logging_mixin.py:104} INFO - Contador:  132
+[2021-04-07 02:11:20,819] {logging_mixin.py:104} INFO - Linhas:  655000
+[2021-04-07 02:11:20,820] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:11:35,252] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:11:35,253] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:11:35,253] {logging_mixin.py:104} INFO - Contador:  133
+[2021-04-07 02:11:35,254] {logging_mixin.py:104} INFO - Linhas:  660000
+[2021-04-07 02:11:35,254] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:11:50,047] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:11:50,048] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:11:50,052] {logging_mixin.py:104} INFO - Contador:  134
+[2021-04-07 02:11:50,059] {logging_mixin.py:104} INFO - Linhas:  665000
+[2021-04-07 02:11:50,059] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:12:10,301] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:12:10,308] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:12:10,313] {logging_mixin.py:104} INFO - Contador:  135
+[2021-04-07 02:12:10,324] {logging_mixin.py:104} INFO - Linhas:  670000
+[2021-04-07 02:12:10,325] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:12:26,291] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:12:26,292] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:12:26,292] {logging_mixin.py:104} INFO - Contador:  136
+[2021-04-07 02:12:26,295] {logging_mixin.py:104} INFO - Linhas:  675000
+[2021-04-07 02:12:26,299] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:12:40,283] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:12:40,285] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:12:40,286] {logging_mixin.py:104} INFO - Contador:  137
+[2021-04-07 02:12:40,289] {logging_mixin.py:104} INFO - Linhas:  680000
+[2021-04-07 02:12:40,293] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:12:54,634] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:12:54,640] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:12:54,640] {logging_mixin.py:104} INFO - Contador:  138
+[2021-04-07 02:12:54,641] {logging_mixin.py:104} INFO - Linhas:  685000
+[2021-04-07 02:12:54,641] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:13:10,221] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:13:10,222] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:13:10,226] {logging_mixin.py:104} INFO - Contador:  139
+[2021-04-07 02:13:10,229] {logging_mixin.py:104} INFO - Linhas:  690000
+[2021-04-07 02:13:10,230] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:13:23,942] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:13:23,952] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:13:23,955] {logging_mixin.py:104} INFO - Contador:  140
+[2021-04-07 02:13:23,957] {logging_mixin.py:104} INFO - Linhas:  695000
+[2021-04-07 02:13:23,966] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:13:38,018] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:13:38,046] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:13:38,046] {logging_mixin.py:104} INFO - Contador:  141
+[2021-04-07 02:13:38,046] {logging_mixin.py:104} INFO - Linhas:  700000
+[2021-04-07 02:13:38,046] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:13:57,323] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:13:57,329] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:13:57,333] {logging_mixin.py:104} INFO - Contador:  142
+[2021-04-07 02:13:57,334] {logging_mixin.py:104} INFO - Linhas:  705000
+[2021-04-07 02:13:57,335] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:14:15,344] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:14:15,353] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:14:15,354] {logging_mixin.py:104} INFO - Contador:  143
+[2021-04-07 02:14:15,358] {logging_mixin.py:104} INFO - Linhas:  710000
+[2021-04-07 02:14:15,365] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:14:31,065] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:14:31,066] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:14:31,067] {logging_mixin.py:104} INFO - Contador:  144
+[2021-04-07 02:14:31,067] {logging_mixin.py:104} INFO - Linhas:  715000
+[2021-04-07 02:14:31,068] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:14:45,334] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:14:45,336] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:14:45,337] {logging_mixin.py:104} INFO - Contador:  145
+[2021-04-07 02:14:45,338] {logging_mixin.py:104} INFO - Linhas:  720000
+[2021-04-07 02:14:45,340] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:14:58,904] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:14:58,909] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:14:58,910] {logging_mixin.py:104} INFO - Contador:  146
+[2021-04-07 02:14:58,910] {logging_mixin.py:104} INFO - Linhas:  725000
+[2021-04-07 02:14:58,911] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:15:14,548] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:15:14,551] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:15:14,552] {logging_mixin.py:104} INFO - Contador:  147
+[2021-04-07 02:15:14,553] {logging_mixin.py:104} INFO - Linhas:  730000
+[2021-04-07 02:15:14,555] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:15:28,143] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:15:28,155] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:15:28,156] {logging_mixin.py:104} INFO - Contador:  148
+[2021-04-07 02:15:28,157] {logging_mixin.py:104} INFO - Linhas:  735000
+[2021-04-07 02:15:28,158] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:15:42,409] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:15:42,410] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:15:42,411] {logging_mixin.py:104} INFO - Contador:  149
+[2021-04-07 02:15:42,412] {logging_mixin.py:104} INFO - Linhas:  740000
+[2021-04-07 02:15:42,413] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:15:58,753] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:15:58,757] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:15:58,758] {logging_mixin.py:104} INFO - Contador:  150
+[2021-04-07 02:15:58,758] {logging_mixin.py:104} INFO - Linhas:  745000
+[2021-04-07 02:15:58,759] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:16:12,967] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:16:12,975] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:16:12,976] {logging_mixin.py:104} INFO - Contador:  151
+[2021-04-07 02:16:12,977] {logging_mixin.py:104} INFO - Linhas:  750000
+[2021-04-07 02:16:12,978] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:16:27,853] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:16:27,854] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:16:27,854] {logging_mixin.py:104} INFO - Contador:  152
+[2021-04-07 02:16:27,854] {logging_mixin.py:104} INFO - Linhas:  755000
+[2021-04-07 02:16:27,855] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:16:43,264] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:16:43,268] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:16:43,272] {logging_mixin.py:104} INFO - Contador:  153
+[2021-04-07 02:16:43,280] {logging_mixin.py:104} INFO - Linhas:  760000
+[2021-04-07 02:16:43,290] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:16:56,522] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:16:56,534] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:16:56,536] {logging_mixin.py:104} INFO - Contador:  154
+[2021-04-07 02:16:56,537] {logging_mixin.py:104} INFO - Linhas:  765000
+[2021-04-07 02:16:56,538] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:17:11,364] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:17:11,368] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:17:11,371] {logging_mixin.py:104} INFO - Contador:  155
+[2021-04-07 02:17:11,372] {logging_mixin.py:104} INFO - Linhas:  770000
+[2021-04-07 02:17:11,373] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:17:26,711] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:17:26,713] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:17:26,716] {logging_mixin.py:104} INFO - Contador:  156
+[2021-04-07 02:17:26,719] {logging_mixin.py:104} INFO - Linhas:  775000
+[2021-04-07 02:17:26,723] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:17:40,407] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:17:40,410] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:17:40,411] {logging_mixin.py:104} INFO - Contador:  157
+[2021-04-07 02:17:40,412] {logging_mixin.py:104} INFO - Linhas:  780000
+[2021-04-07 02:17:40,412] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:17:54,360] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:17:54,365] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:17:54,366] {logging_mixin.py:104} INFO - Contador:  158
+[2021-04-07 02:17:54,371] {logging_mixin.py:104} INFO - Linhas:  785000
+[2021-04-07 02:17:54,373] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:18:09,880] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:18:09,881] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:18:09,881] {logging_mixin.py:104} INFO - Contador:  159
+[2021-04-07 02:18:09,882] {logging_mixin.py:104} INFO - Linhas:  790000
+[2021-04-07 02:18:09,883] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:18:24,803] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:18:24,807] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:18:24,809] {logging_mixin.py:104} INFO - Contador:  160
+[2021-04-07 02:18:24,813] {logging_mixin.py:104} INFO - Linhas:  795000
+[2021-04-07 02:18:24,814] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:18:38,696] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:18:38,697] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:18:38,698] {logging_mixin.py:104} INFO - Contador:  161
+[2021-04-07 02:18:38,699] {logging_mixin.py:104} INFO - Linhas:  800000
+[2021-04-07 02:18:38,699] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:19:03,189] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:19:03,189] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:19:03,192] {logging_mixin.py:104} INFO - Contador:  162
+[2021-04-07 02:19:03,193] {logging_mixin.py:104} INFO - Linhas:  805000
+[2021-04-07 02:19:03,196] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:19:16,509] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:19:16,509] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:19:16,509] {logging_mixin.py:104} INFO - Contador:  163
+[2021-04-07 02:19:16,509] {logging_mixin.py:104} INFO - Linhas:  810000
+[2021-04-07 02:19:16,509] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:19:29,769] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:19:29,771] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:19:29,771] {logging_mixin.py:104} INFO - Contador:  164
+[2021-04-07 02:19:29,772] {logging_mixin.py:104} INFO - Linhas:  815000
+[2021-04-07 02:19:29,772] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:19:45,782] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:19:45,783] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:19:45,785] {logging_mixin.py:104} INFO - Contador:  165
+[2021-04-07 02:19:45,788] {logging_mixin.py:104} INFO - Linhas:  820000
+[2021-04-07 02:19:45,789] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:20:00,576] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:20:00,589] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:20:00,590] {logging_mixin.py:104} INFO - Contador:  166
+[2021-04-07 02:20:00,592] {logging_mixin.py:104} INFO - Linhas:  825000
+[2021-04-07 02:20:00,612] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:20:14,456] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:20:14,457] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:20:14,458] {logging_mixin.py:104} INFO - Contador:  167
+[2021-04-07 02:20:14,459] {logging_mixin.py:104} INFO - Linhas:  830000
+[2021-04-07 02:20:14,460] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:20:30,584] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:20:30,585] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:20:30,587] {logging_mixin.py:104} INFO - Contador:  168
+[2021-04-07 02:20:30,588] {logging_mixin.py:104} INFO - Linhas:  835000
+[2021-04-07 02:20:30,588] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:20:44,342] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:20:44,347] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:20:44,348] {logging_mixin.py:104} INFO - Contador:  169
+[2021-04-07 02:20:44,360] {logging_mixin.py:104} INFO - Linhas:  840000
+[2021-04-07 02:20:44,360] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:20:58,620] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:20:58,633] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:20:58,635] {logging_mixin.py:104} INFO - Contador:  170
+[2021-04-07 02:20:58,635] {logging_mixin.py:104} INFO - Linhas:  845000
+[2021-04-07 02:20:58,636] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:21:16,333] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:21:16,335] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:21:16,335] {logging_mixin.py:104} INFO - Contador:  171
+[2021-04-07 02:21:16,336] {logging_mixin.py:104} INFO - Linhas:  850000
+[2021-04-07 02:21:16,336] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:21:30,539] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:21:30,539] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:21:30,539] {logging_mixin.py:104} INFO - Contador:  172
+[2021-04-07 02:21:30,572] {logging_mixin.py:104} INFO - Linhas:  855000
+[2021-04-07 02:21:30,574] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:21:43,726] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:21:43,745] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:21:43,747] {logging_mixin.py:104} INFO - Contador:  173
+[2021-04-07 02:21:43,758] {logging_mixin.py:104} INFO - Linhas:  860000
+[2021-04-07 02:21:43,760] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:22:07,288] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:22:07,294] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:22:07,301] {logging_mixin.py:104} INFO - Contador:  174
+[2021-04-07 02:22:07,303] {logging_mixin.py:104} INFO - Linhas:  865000
+[2021-04-07 02:22:07,307] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:22:21,679] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:22:21,679] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:22:21,680] {logging_mixin.py:104} INFO - Contador:  175
+[2021-04-07 02:22:21,680] {logging_mixin.py:104} INFO - Linhas:  870000
+[2021-04-07 02:22:21,681] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:22:34,783] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:22:34,784] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:22:34,785] {logging_mixin.py:104} INFO - Contador:  176
+[2021-04-07 02:22:34,785] {logging_mixin.py:104} INFO - Linhas:  875000
+[2021-04-07 02:22:34,786] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:22:50,501] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:22:50,503] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:22:50,504] {logging_mixin.py:104} INFO - Contador:  177
+[2021-04-07 02:22:50,507] {logging_mixin.py:104} INFO - Linhas:  880000
+[2021-04-07 02:22:50,508] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:23:04,000] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:23:04,002] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:23:04,006] {logging_mixin.py:104} INFO - Contador:  178
+[2021-04-07 02:23:04,014] {logging_mixin.py:104} INFO - Linhas:  885000
+[2021-04-07 02:23:04,016] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:23:17,914] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:23:17,914] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:23:17,915] {logging_mixin.py:104} INFO - Contador:  179
+[2021-04-07 02:23:17,915] {logging_mixin.py:104} INFO - Linhas:  890000
+[2021-04-07 02:23:17,916] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:23:33,807] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:23:33,820] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:23:33,823] {logging_mixin.py:104} INFO - Contador:  180
+[2021-04-07 02:23:33,824] {logging_mixin.py:104} INFO - Linhas:  895000
+[2021-04-07 02:23:33,827] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:23:47,187] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:23:47,189] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:23:47,192] {logging_mixin.py:104} INFO - Contador:  181
+[2021-04-07 02:23:47,195] {logging_mixin.py:104} INFO - Linhas:  900000
+[2021-04-07 02:23:47,196] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:24:02,316] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:24:02,318] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:24:02,318] {logging_mixin.py:104} INFO - Contador:  182
+[2021-04-07 02:24:02,318] {logging_mixin.py:104} INFO - Linhas:  905000
+[2021-04-07 02:24:02,319] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:24:18,886] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:24:18,887] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:24:18,889] {logging_mixin.py:104} INFO - Contador:  183
+[2021-04-07 02:24:18,890] {logging_mixin.py:104} INFO - Linhas:  910000
+[2021-04-07 02:24:18,891] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:24:32,388] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:24:32,390] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:24:32,392] {logging_mixin.py:104} INFO - Contador:  184
+[2021-04-07 02:24:32,393] {logging_mixin.py:104} INFO - Linhas:  915000
+[2021-04-07 02:24:32,394] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:24:45,976] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:24:45,987] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:24:45,988] {logging_mixin.py:104} INFO - Contador:  185
+[2021-04-07 02:24:45,989] {logging_mixin.py:104} INFO - Linhas:  920000
+[2021-04-07 02:24:45,990] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:25:03,018] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:25:03,019] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:25:03,019] {logging_mixin.py:104} INFO - Contador:  186
+[2021-04-07 02:25:03,020] {logging_mixin.py:104} INFO - Linhas:  925000
+[2021-04-07 02:25:03,020] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:25:17,583] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:25:17,585] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:25:17,587] {logging_mixin.py:104} INFO - Contador:  187
+[2021-04-07 02:25:17,588] {logging_mixin.py:104} INFO - Linhas:  930000
+[2021-04-07 02:25:17,589] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:25:37,013] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:25:37,018] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:25:37,018] {logging_mixin.py:104} INFO - Contador:  188
+[2021-04-07 02:25:37,019] {logging_mixin.py:104} INFO - Linhas:  935000
+[2021-04-07 02:25:37,032] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:25:53,792] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:25:53,793] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:25:53,794] {logging_mixin.py:104} INFO - Contador:  189
+[2021-04-07 02:25:53,794] {logging_mixin.py:104} INFO - Linhas:  940000
+[2021-04-07 02:25:53,795] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:26:07,681] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:26:07,689] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:26:07,693] {logging_mixin.py:104} INFO - Contador:  190
+[2021-04-07 02:26:07,693] {logging_mixin.py:104} INFO - Linhas:  945000
+[2021-04-07 02:26:07,700] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:26:21,334] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:26:21,335] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:26:21,338] {logging_mixin.py:104} INFO - Contador:  191
+[2021-04-07 02:26:21,339] {logging_mixin.py:104} INFO - Linhas:  950000
+[2021-04-07 02:26:21,340] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:26:40,060] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:26:40,062] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:26:40,068] {logging_mixin.py:104} INFO - Contador:  192
+[2021-04-07 02:26:40,069] {logging_mixin.py:104} INFO - Linhas:  955000
+[2021-04-07 02:26:40,070] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:26:54,556] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:26:54,558] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:26:54,559] {logging_mixin.py:104} INFO - Contador:  193
+[2021-04-07 02:26:54,559] {logging_mixin.py:104} INFO - Linhas:  960000
+[2021-04-07 02:26:54,559] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:27:08,879] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:27:08,881] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:27:08,884] {logging_mixin.py:104} INFO - Contador:  194
+[2021-04-07 02:27:08,885] {logging_mixin.py:104} INFO - Linhas:  965000
+[2021-04-07 02:27:08,886] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:27:23,250] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:27:23,254] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:27:23,255] {logging_mixin.py:104} INFO - Contador:  195
+[2021-04-07 02:27:23,256] {logging_mixin.py:104} INFO - Linhas:  970000
+[2021-04-07 02:27:23,256] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:27:44,149] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:27:44,151] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:27:44,153] {logging_mixin.py:104} INFO - Contador:  196
+[2021-04-07 02:27:44,155] {logging_mixin.py:104} INFO - Linhas:  975000
+[2021-04-07 02:27:44,162] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:28:06,373] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:28:06,375] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:28:06,388] {logging_mixin.py:104} INFO - Contador:  197
+[2021-04-07 02:28:06,389] {logging_mixin.py:104} INFO - Linhas:  980000
+[2021-04-07 02:28:06,390] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:28:21,865] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:28:21,872] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:28:21,875] {logging_mixin.py:104} INFO - Contador:  198
+[2021-04-07 02:28:21,878] {logging_mixin.py:104} INFO - Linhas:  985000
+[2021-04-07 02:28:21,880] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:28:40,746] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:28:40,748] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:28:40,749] {logging_mixin.py:104} INFO - Contador:  199
+[2021-04-07 02:28:40,750] {logging_mixin.py:104} INFO - Linhas:  990000
+[2021-04-07 02:28:40,750] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:28:55,968] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:28:55,971] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:28:55,975] {logging_mixin.py:104} INFO - Contador:  200
+[2021-04-07 02:28:55,975] {logging_mixin.py:104} INFO - Linhas:  995000
+[2021-04-07 02:28:55,977] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:29:11,200] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:29:11,203] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:29:11,204] {logging_mixin.py:104} INFO - Contador:  201
+[2021-04-07 02:29:11,205] {logging_mixin.py:104} INFO - Linhas:  1000000
+[2021-04-07 02:29:11,205] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:29:26,519] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:29:26,520] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:29:26,523] {logging_mixin.py:104} INFO - Contador:  202
+[2021-04-07 02:29:26,524] {logging_mixin.py:104} INFO - Linhas:  1005000
+[2021-04-07 02:29:26,524] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:29:40,644] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:29:40,646] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:29:40,647] {logging_mixin.py:104} INFO - Contador:  203
+[2021-04-07 02:29:40,647] {logging_mixin.py:104} INFO - Linhas:  1010000
+[2021-04-07 02:29:40,648] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:29:56,630] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:29:56,631] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:29:56,631] {logging_mixin.py:104} INFO - Contador:  204
+[2021-04-07 02:29:56,633] {logging_mixin.py:104} INFO - Linhas:  1015000
+[2021-04-07 02:29:56,635] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:30:18,027] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:30:18,027] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:30:18,028] {logging_mixin.py:104} INFO - Contador:  205
+[2021-04-07 02:30:18,028] {logging_mixin.py:104} INFO - Linhas:  1020000
+[2021-04-07 02:30:18,028] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:30:32,083] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:30:32,084] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:30:32,085] {logging_mixin.py:104} INFO - Contador:  206
+[2021-04-07 02:30:32,085] {logging_mixin.py:104} INFO - Linhas:  1025000
+[2021-04-07 02:30:32,086] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:30:51,035] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:30:51,036] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:30:51,037] {logging_mixin.py:104} INFO - Contador:  207
+[2021-04-07 02:30:51,038] {logging_mixin.py:104} INFO - Linhas:  1030000
+[2021-04-07 02:30:51,039] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:31:13,595] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:31:13,609] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:31:13,612] {logging_mixin.py:104} INFO - Contador:  208
+[2021-04-07 02:31:13,612] {logging_mixin.py:104} INFO - Linhas:  1035000
+[2021-04-07 02:31:13,612] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:31:27,706] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:31:27,708] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:31:27,709] {logging_mixin.py:104} INFO - Contador:  209
+[2021-04-07 02:31:27,709] {logging_mixin.py:104} INFO - Linhas:  1040000
+[2021-04-07 02:31:27,710] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:31:44,376] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:31:44,377] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:31:44,377] {logging_mixin.py:104} INFO - Contador:  210
+[2021-04-07 02:31:44,379] {logging_mixin.py:104} INFO - Linhas:  1045000
+[2021-04-07 02:31:44,381] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:31:59,499] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:31:59,505] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:31:59,511] {logging_mixin.py:104} INFO - Contador:  211
+[2021-04-07 02:31:59,512] {logging_mixin.py:104} INFO - Linhas:  1050000
+[2021-04-07 02:31:59,516] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:32:16,502] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:32:16,505] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:32:16,506] {logging_mixin.py:104} INFO - Contador:  212
+[2021-04-07 02:32:16,506] {logging_mixin.py:104} INFO - Linhas:  1055000
+[2021-04-07 02:32:16,508] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:32:33,014] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:32:33,015] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:32:33,016] {logging_mixin.py:104} INFO - Contador:  213
+[2021-04-07 02:32:33,017] {logging_mixin.py:104} INFO - Linhas:  1060000
+[2021-04-07 02:32:33,017] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:32:49,276] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:32:49,277] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:32:49,279] {logging_mixin.py:104} INFO - Contador:  214
+[2021-04-07 02:32:49,280] {logging_mixin.py:104} INFO - Linhas:  1065000
+[2021-04-07 02:32:49,282] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:33:02,266] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:33:02,272] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:33:02,276] {logging_mixin.py:104} INFO - Contador:  215
+[2021-04-07 02:33:02,276] {logging_mixin.py:104} INFO - Linhas:  1070000
+[2021-04-07 02:33:02,277] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:33:26,928] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:33:26,930] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:33:26,931] {logging_mixin.py:104} INFO - Contador:  216
+[2021-04-07 02:33:26,932] {logging_mixin.py:104} INFO - Linhas:  1075000
+[2021-04-07 02:33:26,933] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:33:40,662] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:33:40,665] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:33:40,666] {logging_mixin.py:104} INFO - Contador:  217
+[2021-04-07 02:33:40,667] {logging_mixin.py:104} INFO - Linhas:  1080000
+[2021-04-07 02:33:40,670] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:33:55,052] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:33:55,060] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:33:55,062] {logging_mixin.py:104} INFO - Contador:  218
+[2021-04-07 02:33:55,064] {logging_mixin.py:104} INFO - Linhas:  1085000
+[2021-04-07 02:33:55,067] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:34:11,434] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:34:11,441] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:34:11,444] {logging_mixin.py:104} INFO - Contador:  219
+[2021-04-07 02:34:11,446] {logging_mixin.py:104} INFO - Linhas:  1090000
+[2021-04-07 02:34:11,459] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:34:29,849] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:34:29,850] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:34:29,851] {logging_mixin.py:104} INFO - Contador:  220
+[2021-04-07 02:34:29,852] {logging_mixin.py:104} INFO - Linhas:  1095000
+[2021-04-07 02:34:29,855] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:34:46,567] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:34:46,569] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:34:46,570] {logging_mixin.py:104} INFO - Contador:  221
+[2021-04-07 02:34:46,572] {logging_mixin.py:104} INFO - Linhas:  1100000
+[2021-04-07 02:34:46,573] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:35:03,232] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:35:03,234] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:35:03,235] {logging_mixin.py:104} INFO - Contador:  222
+[2021-04-07 02:35:03,237] {logging_mixin.py:104} INFO - Linhas:  1105000
+[2021-04-07 02:35:03,238] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:35:16,467] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:35:16,469] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:35:16,476] {logging_mixin.py:104} INFO - Contador:  223
+[2021-04-07 02:35:16,480] {logging_mixin.py:104} INFO - Linhas:  1110000
+[2021-04-07 02:35:16,486] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:35:31,015] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:35:31,017] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:35:31,017] {logging_mixin.py:104} INFO - Contador:  224
+[2021-04-07 02:35:31,018] {logging_mixin.py:104} INFO - Linhas:  1115000
+[2021-04-07 02:35:31,018] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:35:48,471] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:35:48,473] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:35:48,474] {logging_mixin.py:104} INFO - Contador:  225
+[2021-04-07 02:35:48,474] {logging_mixin.py:104} INFO - Linhas:  1120000
+[2021-04-07 02:35:48,475] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:36:08,693] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:36:08,695] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:36:08,696] {logging_mixin.py:104} INFO - Contador:  226
+[2021-04-07 02:36:08,700] {logging_mixin.py:104} INFO - Linhas:  1125000
+[2021-04-07 02:36:08,705] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:36:23,376] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:36:23,377] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:36:23,377] {logging_mixin.py:104} INFO - Contador:  227
+[2021-04-07 02:36:23,378] {logging_mixin.py:104} INFO - Linhas:  1130000
+[2021-04-07 02:36:23,379] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:36:40,146] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:36:40,148] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:36:40,150] {logging_mixin.py:104} INFO - Contador:  228
+[2021-04-07 02:36:40,150] {logging_mixin.py:104} INFO - Linhas:  1135000
+[2021-04-07 02:36:40,151] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:36:53,312] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:36:53,313] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:36:53,313] {logging_mixin.py:104} INFO - Contador:  229
+[2021-04-07 02:36:53,316] {logging_mixin.py:104} INFO - Linhas:  1140000
+[2021-04-07 02:36:53,317] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:37:07,976] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:37:07,980] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:37:07,981] {logging_mixin.py:104} INFO - Contador:  230
+[2021-04-07 02:37:07,983] {logging_mixin.py:104} INFO - Linhas:  1145000
+[2021-04-07 02:37:07,986] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:37:24,909] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:37:24,910] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:37:24,910] {logging_mixin.py:104} INFO - Contador:  231
+[2021-04-07 02:37:24,911] {logging_mixin.py:104} INFO - Linhas:  1150000
+[2021-04-07 02:37:24,911] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:37:38,338] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:37:38,339] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:37:38,340] {logging_mixin.py:104} INFO - Contador:  232
+[2021-04-07 02:37:38,340] {logging_mixin.py:104} INFO - Linhas:  1155000
+[2021-04-07 02:37:38,340] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:37:52,566] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:37:52,573] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:37:52,591] {logging_mixin.py:104} INFO - Contador:  233
+[2021-04-07 02:37:52,592] {logging_mixin.py:104} INFO - Linhas:  1160000
+[2021-04-07 02:37:52,593] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:38:15,630] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:38:15,631] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:38:15,631] {logging_mixin.py:104} INFO - Contador:  234
+[2021-04-07 02:38:15,632] {logging_mixin.py:104} INFO - Linhas:  1165000
+[2021-04-07 02:38:15,632] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:38:29,970] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:38:29,972] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:38:29,972] {logging_mixin.py:104} INFO - Contador:  235
+[2021-04-07 02:38:29,973] {logging_mixin.py:104} INFO - Linhas:  1170000
+[2021-04-07 02:38:29,977] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:38:43,742] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:38:43,744] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:38:43,744] {logging_mixin.py:104} INFO - Contador:  236
+[2021-04-07 02:38:43,745] {logging_mixin.py:104} INFO - Linhas:  1175000
+[2021-04-07 02:38:43,746] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:38:58,526] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:38:58,527] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:38:58,528] {logging_mixin.py:104} INFO - Contador:  237
+[2021-04-07 02:38:58,529] {logging_mixin.py:104} INFO - Linhas:  1180000
+[2021-04-07 02:38:58,532] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:39:15,226] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:39:15,227] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:39:15,231] {logging_mixin.py:104} INFO - Contador:  238
+[2021-04-07 02:39:15,233] {logging_mixin.py:104} INFO - Linhas:  1185000
+[2021-04-07 02:39:15,235] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:39:29,024] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:39:29,025] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:39:29,026] {logging_mixin.py:104} INFO - Contador:  239
+[2021-04-07 02:39:29,029] {logging_mixin.py:104} INFO - Linhas:  1190000
+[2021-04-07 02:39:29,030] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:39:51,402] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:39:51,403] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:39:51,403] {logging_mixin.py:104} INFO - Contador:  240
+[2021-04-07 02:39:51,403] {logging_mixin.py:104} INFO - Linhas:  1195000
+[2021-04-07 02:39:51,404] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:40:10,674] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:40:10,687] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:40:10,689] {logging_mixin.py:104} INFO - Contador:  241
+[2021-04-07 02:40:10,693] {logging_mixin.py:104} INFO - Linhas:  1200000
+[2021-04-07 02:40:10,694] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:40:24,605] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:40:24,607] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:40:24,608] {logging_mixin.py:104} INFO - Contador:  242
+[2021-04-07 02:40:24,612] {logging_mixin.py:104} INFO - Linhas:  1205000
+[2021-04-07 02:40:24,612] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:40:40,048] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:40:40,049] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:40:40,049] {logging_mixin.py:104} INFO - Contador:  243
+[2021-04-07 02:40:40,049] {logging_mixin.py:104} INFO - Linhas:  1210000
+[2021-04-07 02:40:40,050] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:40:55,686] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:40:55,687] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:40:55,690] {logging_mixin.py:104} INFO - Contador:  244
+[2021-04-07 02:40:55,699] {logging_mixin.py:104} INFO - Linhas:  1215000
+[2021-04-07 02:40:55,711] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:41:11,351] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:41:11,355] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:41:11,356] {logging_mixin.py:104} INFO - Contador:  245
+[2021-04-07 02:41:11,357] {logging_mixin.py:104} INFO - Linhas:  1220000
+[2021-04-07 02:41:11,357] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:41:25,966] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:41:25,970] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:41:25,975] {logging_mixin.py:104} INFO - Contador:  246
+[2021-04-07 02:41:25,977] {logging_mixin.py:104} INFO - Linhas:  1225000
+[2021-04-07 02:41:25,977] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:41:44,552] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:41:44,552] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:41:44,553] {logging_mixin.py:104} INFO - Contador:  247
+[2021-04-07 02:41:44,554] {logging_mixin.py:104} INFO - Linhas:  1230000
+[2021-04-07 02:41:44,555] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:42:04,427] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:42:04,427] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:42:04,428] {logging_mixin.py:104} INFO - Contador:  248
+[2021-04-07 02:42:04,430] {logging_mixin.py:104} INFO - Linhas:  1235000
+[2021-04-07 02:42:04,433] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:42:17,702] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:42:17,704] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:42:17,705] {logging_mixin.py:104} INFO - Contador:  249
+[2021-04-07 02:42:17,705] {logging_mixin.py:104} INFO - Linhas:  1240000
+[2021-04-07 02:42:17,706] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:42:39,821] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:42:39,822] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:42:39,822] {logging_mixin.py:104} INFO - Contador:  250
+[2021-04-07 02:42:39,824] {logging_mixin.py:104} INFO - Linhas:  1245000
+[2021-04-07 02:42:39,825] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:42:54,072] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:42:54,076] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:42:54,077] {logging_mixin.py:104} INFO - Contador:  251
+[2021-04-07 02:42:54,077] {logging_mixin.py:104} INFO - Linhas:  1250000
+[2021-04-07 02:42:54,078] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:43:10,388] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:43:10,391] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:43:10,393] {logging_mixin.py:104} INFO - Contador:  252
+[2021-04-07 02:43:10,394] {logging_mixin.py:104} INFO - Linhas:  1255000
+[2021-04-07 02:43:10,397] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:43:27,417] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:43:27,417] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:43:27,418] {logging_mixin.py:104} INFO - Contador:  253
+[2021-04-07 02:43:27,418] {logging_mixin.py:104} INFO - Linhas:  1260000
+[2021-04-07 02:43:27,418] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:43:44,414] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:43:44,417] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:43:44,418] {logging_mixin.py:104} INFO - Contador:  254
+[2021-04-07 02:43:44,418] {logging_mixin.py:104} INFO - Linhas:  1265000
+[2021-04-07 02:43:44,419] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:43:59,694] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:43:59,696] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:43:59,697] {logging_mixin.py:104} INFO - Contador:  255
+[2021-04-07 02:43:59,697] {logging_mixin.py:104} INFO - Linhas:  1270000
+[2021-04-07 02:43:59,698] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:44:15,214] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:44:15,215] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:44:15,215] {logging_mixin.py:104} INFO - Contador:  256
+[2021-04-07 02:44:15,216] {logging_mixin.py:104} INFO - Linhas:  1275000
+[2021-04-07 02:44:15,217] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:44:32,529] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:44:32,530] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:44:32,530] {logging_mixin.py:104} INFO - Contador:  257
+[2021-04-07 02:44:32,533] {logging_mixin.py:104} INFO - Linhas:  1280000
+[2021-04-07 02:44:32,534] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:44:54,213] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:44:54,217] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:44:54,218] {logging_mixin.py:104} INFO - Contador:  258
+[2021-04-07 02:44:54,229] {logging_mixin.py:104} INFO - Linhas:  1285000
+[2021-04-07 02:44:54,230] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:45:11,092] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:45:11,092] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:45:11,093] {logging_mixin.py:104} INFO - Contador:  259
+[2021-04-07 02:45:11,093] {logging_mixin.py:104} INFO - Linhas:  1290000
+[2021-04-07 02:45:11,094] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:45:26,814] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:45:26,815] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:45:26,815] {logging_mixin.py:104} INFO - Contador:  260
+[2021-04-07 02:45:26,816] {logging_mixin.py:104} INFO - Linhas:  1295000
+[2021-04-07 02:45:26,817] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:45:41,868] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:45:41,869] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:45:41,870] {logging_mixin.py:104} INFO - Contador:  261
+[2021-04-07 02:45:41,870] {logging_mixin.py:104} INFO - Linhas:  1300000
+[2021-04-07 02:45:41,870] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:46:00,141] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:46:00,142] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:46:00,142] {logging_mixin.py:104} INFO - Contador:  262
+[2021-04-07 02:46:00,142] {logging_mixin.py:104} INFO - Linhas:  1305000
+[2021-04-07 02:46:00,143] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:46:16,161] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:46:16,163] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:46:16,164] {logging_mixin.py:104} INFO - Contador:  263
+[2021-04-07 02:46:16,166] {logging_mixin.py:104} INFO - Linhas:  1310000
+[2021-04-07 02:46:16,168] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:46:31,097] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:46:31,098] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:46:31,098] {logging_mixin.py:104} INFO - Contador:  264
+[2021-04-07 02:46:31,098] {logging_mixin.py:104} INFO - Linhas:  1315000
+[2021-04-07 02:46:31,099] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:46:47,786] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:46:47,787] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:46:47,787] {logging_mixin.py:104} INFO - Contador:  265
+[2021-04-07 02:46:47,788] {logging_mixin.py:104} INFO - Linhas:  1320000
+[2021-04-07 02:46:47,788] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:47:03,187] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:47:03,189] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:47:03,190] {logging_mixin.py:104} INFO - Contador:  266
+[2021-04-07 02:47:03,190] {logging_mixin.py:104} INFO - Linhas:  1325000
+[2021-04-07 02:47:03,190] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:47:18,839] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:47:18,840] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:47:18,840] {logging_mixin.py:104} INFO - Contador:  267
+[2021-04-07 02:47:18,841] {logging_mixin.py:104} INFO - Linhas:  1330000
+[2021-04-07 02:47:18,841] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:47:35,840] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:47:35,841] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:47:35,841] {logging_mixin.py:104} INFO - Contador:  268
+[2021-04-07 02:47:35,842] {logging_mixin.py:104} INFO - Linhas:  1335000
+[2021-04-07 02:47:35,842] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:47:51,263] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:47:51,264] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:47:51,265] {logging_mixin.py:104} INFO - Contador:  269
+[2021-04-07 02:47:51,265] {logging_mixin.py:104} INFO - Linhas:  1340000
+[2021-04-07 02:47:51,265] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:48:07,424] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:48:07,425] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:48:07,425] {logging_mixin.py:104} INFO - Contador:  270
+[2021-04-07 02:48:07,426] {logging_mixin.py:104} INFO - Linhas:  1345000
+[2021-04-07 02:48:07,426] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:48:23,369] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:48:23,370] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:48:23,371] {logging_mixin.py:104} INFO - Contador:  271
+[2021-04-07 02:48:23,374] {logging_mixin.py:104} INFO - Linhas:  1350000
+[2021-04-07 02:48:23,375] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:48:39,005] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:48:39,007] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:48:39,008] {logging_mixin.py:104} INFO - Contador:  272
+[2021-04-07 02:48:39,009] {logging_mixin.py:104} INFO - Linhas:  1355000
+[2021-04-07 02:48:39,010] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:48:54,579] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:48:54,581] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:48:54,581] {logging_mixin.py:104} INFO - Contador:  273
+[2021-04-07 02:48:54,582] {logging_mixin.py:104} INFO - Linhas:  1360000
+[2021-04-07 02:48:54,582] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:49:10,613] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:49:10,616] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:49:10,616] {logging_mixin.py:104} INFO - Contador:  274
+[2021-04-07 02:49:10,617] {logging_mixin.py:104} INFO - Linhas:  1365000
+[2021-04-07 02:49:10,618] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:49:26,622] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:49:26,641] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:49:26,650] {logging_mixin.py:104} INFO - Contador:  275
+[2021-04-07 02:49:26,650] {logging_mixin.py:104} INFO - Linhas:  1370000
+[2021-04-07 02:49:26,652] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:49:47,263] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:49:47,264] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:49:47,264] {logging_mixin.py:104} INFO - Contador:  276
+[2021-04-07 02:49:47,264] {logging_mixin.py:104} INFO - Linhas:  1375000
+[2021-04-07 02:49:47,264] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:50:02,832] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:50:02,833] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:50:02,834] {logging_mixin.py:104} INFO - Contador:  277
+[2021-04-07 02:50:02,834] {logging_mixin.py:104} INFO - Linhas:  1380000
+[2021-04-07 02:50:02,837] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:50:18,344] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:50:18,345] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:50:18,345] {logging_mixin.py:104} INFO - Contador:  278
+[2021-04-07 02:50:18,346] {logging_mixin.py:104} INFO - Linhas:  1385000
+[2021-04-07 02:50:18,347] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:50:35,862] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:50:35,863] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:50:35,863] {logging_mixin.py:104} INFO - Contador:  279
+[2021-04-07 02:50:35,865] {logging_mixin.py:104} INFO - Linhas:  1390000
+[2021-04-07 02:50:35,866] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:50:53,446] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:50:53,448] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:50:53,450] {logging_mixin.py:104} INFO - Contador:  280
+[2021-04-07 02:50:53,450] {logging_mixin.py:104} INFO - Linhas:  1395000
+[2021-04-07 02:50:53,451] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:51:08,658] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:51:08,664] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:51:08,665] {logging_mixin.py:104} INFO - Contador:  281
+[2021-04-07 02:51:08,666] {logging_mixin.py:104} INFO - Linhas:  1400000
+[2021-04-07 02:51:08,667] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:51:30,733] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:51:30,735] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:51:30,736] {logging_mixin.py:104} INFO - Contador:  282
+[2021-04-07 02:51:30,739] {logging_mixin.py:104} INFO - Linhas:  1405000
+[2021-04-07 02:51:30,740] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:51:47,409] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:51:47,410] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:51:47,411] {logging_mixin.py:104} INFO - Contador:  283
+[2021-04-07 02:51:47,417] {logging_mixin.py:104} INFO - Linhas:  1410000
+[2021-04-07 02:51:47,421] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:52:03,768] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:52:03,768] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:52:03,769] {logging_mixin.py:104} INFO - Contador:  284
+[2021-04-07 02:52:03,769] {logging_mixin.py:104} INFO - Linhas:  1415000
+[2021-04-07 02:52:03,769] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:52:22,231] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:52:22,233] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:52:22,234] {logging_mixin.py:104} INFO - Contador:  285
+[2021-04-07 02:52:22,235] {logging_mixin.py:104} INFO - Linhas:  1420000
+[2021-04-07 02:52:22,236] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:52:38,913] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:52:38,931] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:52:38,932] {logging_mixin.py:104} INFO - Contador:  286
+[2021-04-07 02:52:38,935] {logging_mixin.py:104} INFO - Linhas:  1425000
+[2021-04-07 02:52:38,937] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:52:56,122] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:52:56,123] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:52:56,124] {logging_mixin.py:104} INFO - Contador:  287
+[2021-04-07 02:52:56,124] {logging_mixin.py:104} INFO - Linhas:  1430000
+[2021-04-07 02:52:56,125] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:53:13,614] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:53:13,621] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:53:13,624] {logging_mixin.py:104} INFO - Contador:  288
+[2021-04-07 02:53:13,631] {logging_mixin.py:104} INFO - Linhas:  1435000
+[2021-04-07 02:53:13,632] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:53:32,043] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:53:32,044] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:53:32,044] {logging_mixin.py:104} INFO - Contador:  289
+[2021-04-07 02:53:32,045] {logging_mixin.py:104} INFO - Linhas:  1440000
+[2021-04-07 02:53:32,045] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:53:49,691] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:53:49,694] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:53:49,695] {logging_mixin.py:104} INFO - Contador:  290
+[2021-04-07 02:53:49,696] {logging_mixin.py:104} INFO - Linhas:  1445000
+[2021-04-07 02:53:49,696] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:54:07,988] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:54:07,992] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:54:07,995] {logging_mixin.py:104} INFO - Contador:  291
+[2021-04-07 02:54:07,996] {logging_mixin.py:104} INFO - Linhas:  1450000
+[2021-04-07 02:54:08,008] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:54:26,058] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:54:26,059] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:54:26,060] {logging_mixin.py:104} INFO - Contador:  292
+[2021-04-07 02:54:26,060] {logging_mixin.py:104} INFO - Linhas:  1455000
+[2021-04-07 02:54:26,061] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:54:51,989] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:54:51,992] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:54:51,995] {logging_mixin.py:104} INFO - Contador:  293
+[2021-04-07 02:54:51,998] {logging_mixin.py:104} INFO - Linhas:  1460000
+[2021-04-07 02:54:51,999] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:55:13,950] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:55:13,951] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:55:13,951] {logging_mixin.py:104} INFO - Contador:  294
+[2021-04-07 02:55:13,952] {logging_mixin.py:104} INFO - Linhas:  1465000
+[2021-04-07 02:55:13,952] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:55:30,274] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:55:30,275] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:55:30,276] {logging_mixin.py:104} INFO - Contador:  295
+[2021-04-07 02:55:30,276] {logging_mixin.py:104} INFO - Linhas:  1470000
+[2021-04-07 02:55:30,276] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:55:49,207] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:55:49,209] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:55:49,210] {logging_mixin.py:104} INFO - Contador:  296
+[2021-04-07 02:55:49,213] {logging_mixin.py:104} INFO - Linhas:  1475000
+[2021-04-07 02:55:49,213] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:56:07,117] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:56:07,119] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:56:07,125] {logging_mixin.py:104} INFO - Contador:  297
+[2021-04-07 02:56:07,125] {logging_mixin.py:104} INFO - Linhas:  1480000
+[2021-04-07 02:56:07,127] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:56:25,579] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:56:25,580] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:56:25,580] {logging_mixin.py:104} INFO - Contador:  298
+[2021-04-07 02:56:25,581] {logging_mixin.py:104} INFO - Linhas:  1485000
+[2021-04-07 02:56:25,582] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:56:45,002] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:56:45,004] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:56:45,005] {logging_mixin.py:104} INFO - Contador:  299
+[2021-04-07 02:56:45,007] {logging_mixin.py:104} INFO - Linhas:  1490000
+[2021-04-07 02:56:45,008] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:57:03,540] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:57:03,543] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:57:03,545] {logging_mixin.py:104} INFO - Contador:  300
+[2021-04-07 02:57:03,547] {logging_mixin.py:104} INFO - Linhas:  1495000
+[2021-04-07 02:57:03,548] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:57:21,109] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:57:21,109] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:57:21,110] {logging_mixin.py:104} INFO - Contador:  301
+[2021-04-07 02:57:21,110] {logging_mixin.py:104} INFO - Linhas:  1500000
+[2021-04-07 02:57:21,111] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:57:38,215] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:57:38,218] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:57:38,220] {logging_mixin.py:104} INFO - Contador:  302
+[2021-04-07 02:57:38,221] {logging_mixin.py:104} INFO - Linhas:  1505000
+[2021-04-07 02:57:38,222] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:57:56,028] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:57:56,028] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:57:56,029] {logging_mixin.py:104} INFO - Contador:  303
+[2021-04-07 02:57:56,029] {logging_mixin.py:104} INFO - Linhas:  1510000
+[2021-04-07 02:57:56,030] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:58:16,540] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:58:16,556] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:58:16,560] {logging_mixin.py:104} INFO - Contador:  304
+[2021-04-07 02:58:16,565] {logging_mixin.py:104} INFO - Linhas:  1515000
+[2021-04-07 02:58:16,573] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:58:33,473] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:58:33,473] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:58:33,473] {logging_mixin.py:104} INFO - Contador:  305
+[2021-04-07 02:58:33,473] {logging_mixin.py:104} INFO - Linhas:  1520000
+[2021-04-07 02:58:33,473] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:58:51,518] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:58:51,522] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:58:51,522] {logging_mixin.py:104} INFO - Contador:  306
+[2021-04-07 02:58:51,525] {logging_mixin.py:104} INFO - Linhas:  1525000
+[2021-04-07 02:58:51,528] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:59:10,567] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:59:10,577] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:59:10,577] {logging_mixin.py:104} INFO - Contador:  307
+[2021-04-07 02:59:10,578] {logging_mixin.py:104} INFO - Linhas:  1530000
+[2021-04-07 02:59:10,578] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:59:28,121] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:59:28,122] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:59:28,122] {logging_mixin.py:104} INFO - Contador:  308
+[2021-04-07 02:59:28,123] {logging_mixin.py:104} INFO - Linhas:  1535000
+[2021-04-07 02:59:28,124] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 02:59:45,020] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 02:59:45,020] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 02:59:45,021] {logging_mixin.py:104} INFO - Contador:  309
+[2021-04-07 02:59:45,021] {logging_mixin.py:104} INFO - Linhas:  1540000
+[2021-04-07 02:59:45,021] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 03:00:02,490] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:00:02,494] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:00:02,498] {logging_mixin.py:104} INFO - Contador:  310
+[2021-04-07 03:00:02,498] {logging_mixin.py:104} INFO - Linhas:  1545000
+[2021-04-07 03:00:02,502] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 03:00:20,328] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:00:20,329] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:00:20,329] {logging_mixin.py:104} INFO - Contador:  311
+[2021-04-07 03:00:20,330] {logging_mixin.py:104} INFO - Linhas:  1550000
+[2021-04-07 03:00:20,330] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 03:00:21,442] {taskinstance.py:1455} ERROR - 'root'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 100, in carrega_dados
+    root = resp_data['root']
+KeyError: 'root'
+[2021-04-07 03:00:21,445] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trata_relatorios, task_id=popula_relatorios, execution_date=20210407T005000, start_date=20210407T010000, end_date=20210407T030021
+[2021-04-07 03:00:21,464] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-07 03:00:21,465] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-07 03:00:21,466] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-07 03:00:21,467] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-07 03:00:21,467] {taskinstance.py:1509} ERROR - Failed to send email to: ['clecio.antao@gmail.com']
+[2021-04-07 03:00:21,468] {taskinstance.py:1510} ERROR - [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 100, in carrega_dados
+    root = resp_data['root']
+KeyError: 'root'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1852, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1507, in handle_failure
+    self.email_alert(error)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1854, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+[2021-04-07 03:00:21,569] {local_task_job.py:146} INFO - Task exited with return code 1

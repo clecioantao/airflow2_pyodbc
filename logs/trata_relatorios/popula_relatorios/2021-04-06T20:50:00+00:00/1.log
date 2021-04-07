@@ -1,0 +1,120 @@
+[2021-04-06 21:17:22,331] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-06T20:50:00+00:00 [queued]>
+[2021-04-06 21:17:22,381] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-06T20:50:00+00:00 [queued]>
+[2021-04-06 21:17:22,382] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-06 21:17:22,385] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-06 21:17:22,385] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-06 21:17:22,426] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): popula_relatorios> on 2021-04-06T20:50:00+00:00
+[2021-04-06 21:17:22,431] {standard_task_runner.py:52} INFO - Started process 286 to run task
+[2021-04-06 21:17:22,439] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trata_relatorios', 'popula_relatorios', '2021-04-06T20:50:00+00:00', '--job-id', '4', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_chamados.py', '--cfg-path', '/tmp/tmplz1fcxvc', '--error-file', '/tmp/tmpyjv04zwb']
+[2021-04-06 21:17:22,444] {standard_task_runner.py:77} INFO - Job 4: Subtask popula_relatorios
+[2021-04-06 21:17:22,530] {logging_mixin.py:104} INFO - Running <TaskInstance: trata_relatorios.popula_relatorios 2021-04-06T20:50:00+00:00 [running]> on host 078558eb42ea
+[2021-04-06 21:17:22,613] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=clecio.antao@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trata_relatorios
+AIRFLOW_CTX_TASK_ID=popula_relatorios
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-06T20:50:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-06T20:50:00+00:00
+[2021-04-06 21:17:22,990] {taskinstance.py:1455} ERROR - No module named 'pyodbc'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 42, in carrega_dados
+    engineorigem = sqlalchemy.create_engine('mssql+pyodbc://clecio:Proteu690201@192.168.2.170/deskmanager?driver=ODBC+Driver+17+for+SQL+Server')
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 520, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/connectors/pyodbc.py", line 38, in dbapi
+    return __import__("pyodbc")
+ModuleNotFoundError: No module named 'pyodbc'
+[2021-04-06 21:17:22,996] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trata_relatorios, task_id=popula_relatorios, execution_date=20210406T205000, start_date=20210406T211722, end_date=20210406T211722
+[2021-04-06 21:17:23,019] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-06 21:17:23,020] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-06 21:17:23,021] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-06 21:17:23,022] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-06 21:17:23,022] {taskinstance.py:1509} ERROR - Failed to send email to: ['clecio.antao@gmail.com']
+[2021-04-06 21:17:23,023] {taskinstance.py:1510} ERROR - [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 42, in carrega_dados
+    engineorigem = sqlalchemy.create_engine('mssql+pyodbc://clecio:Proteu690201@192.168.2.170/deskmanager?driver=ODBC+Driver+17+for+SQL+Server')
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 520, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/connectors/pyodbc.py", line 38, in dbapi
+    return __import__("pyodbc")
+ModuleNotFoundError: No module named 'pyodbc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1852, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1507, in handle_failure
+    self.email_alert(error)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1854, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+[2021-04-06 21:17:23,077] {local_task_job.py:146} INFO - Task exited with return code 1
