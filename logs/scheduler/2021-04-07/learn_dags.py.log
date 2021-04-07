@@ -5567,3 +5567,24 @@ IndentationError: unexpected indent
 [2021-04-07 12:40:03,153] {logging_mixin.py:104} INFO - [2021-04-07 12:40:03,153] {dag.py:1818} INFO - Sync 1 DAGs
 [2021-04-07 12:40:03,248] {logging_mixin.py:104} INFO - [2021-04-07 12:40:03,246] {dag.py:2273} INFO - Setting next_dagrun for super_simple_dag_v3 to 2021-04-07T11:30:00+00:00
 [2021-04-07 12:40:03,337] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_dags.py took 0.387 seconds
+[2021-04-07 12:40:33,557] {scheduler_job.py:182} INFO - Started process (PID=23447) to work on /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:40:33,561] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_dags.py for tasks to queue
+[2021-04-07 12:40:33,563] {logging_mixin.py:104} INFO - [2021-04-07 12:40:33,563] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:40:33,578] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['super_simple_dag_v3']) retrieved from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:40:33,597] {logging_mixin.py:104} INFO - [2021-04-07 12:40:33,597] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:40:33,631] {logging_mixin.py:104} INFO - [2021-04-07 12:40:33,631] {dag.py:2273} INFO - Setting next_dagrun for super_simple_dag_v3 to 2021-04-07T11:30:00+00:00
+[2021-04-07 12:40:33,674] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_dags.py took 0.120 seconds
+[2021-04-07 12:41:04,255] {scheduler_job.py:182} INFO - Started process (PID=23475) to work on /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:04,260] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_dags.py for tasks to queue
+[2021-04-07 12:41:04,261] {logging_mixin.py:104} INFO - [2021-04-07 12:41:04,261] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:04,293] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['super_simple_dag_v3']) retrieved from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:04,344] {logging_mixin.py:104} INFO - [2021-04-07 12:41:04,343] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:41:04,383] {logging_mixin.py:104} INFO - [2021-04-07 12:41:04,383] {dag.py:2273} INFO - Setting next_dagrun for super_simple_dag_v3 to 2021-04-07T11:30:00+00:00
+[2021-04-07 12:41:04,446] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_dags.py took 0.208 seconds
+[2021-04-07 12:41:35,041] {scheduler_job.py:182} INFO - Started process (PID=23503) to work on /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:35,044] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_dags.py for tasks to queue
+[2021-04-07 12:41:35,046] {logging_mixin.py:104} INFO - [2021-04-07 12:41:35,046] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:35,071] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['super_simple_dag_v3']) retrieved from /opt/airflow/dags/learn_dags.py
+[2021-04-07 12:41:35,127] {logging_mixin.py:104} INFO - [2021-04-07 12:41:35,126] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:41:35,187] {logging_mixin.py:104} INFO - [2021-04-07 12:41:35,186] {dag.py:2273} INFO - Setting next_dagrun for super_simple_dag_v3 to 2021-04-07T11:30:00+00:00
+[2021-04-07 12:41:35,234] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_dags.py took 0.200 seconds

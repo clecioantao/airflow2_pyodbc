@@ -5423,3 +5423,24 @@
 [2021-04-07 12:40:03,658] {logging_mixin.py:104} INFO - [2021-04-07 12:40:03,658] {dag.py:1818} INFO - Sync 1 DAGs
 [2021-04-07 12:40:03,678] {logging_mixin.py:104} INFO - [2021-04-07 12:40:03,678] {dag.py:2273} INFO - Setting next_dagrun for process_financials to 2021-04-06 22:50:24.317182+00:00
 [2021-04-07 12:40:03,739] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_operators.py took 0.807 seconds
+[2021-04-07 12:40:34,567] {scheduler_job.py:182} INFO - Started process (PID=23452) to work on /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:40:34,571] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_operators.py for tasks to queue
+[2021-04-07 12:40:34,573] {logging_mixin.py:104} INFO - [2021-04-07 12:40:34,573] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:40:34,810] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['process_financials']) retrieved from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:40:34,825] {logging_mixin.py:104} INFO - [2021-04-07 12:40:34,825] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:40:34,837] {logging_mixin.py:104} INFO - [2021-04-07 12:40:34,837] {dag.py:2273} INFO - Setting next_dagrun for process_financials to 2021-04-06 22:50:24.317182+00:00
+[2021-04-07 12:40:34,868] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_operators.py took 0.304 seconds
+[2021-04-07 12:41:05,271] {scheduler_job.py:182} INFO - Started process (PID=23480) to work on /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:05,273] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_operators.py for tasks to queue
+[2021-04-07 12:41:05,274] {logging_mixin.py:104} INFO - [2021-04-07 12:41:05,274] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:05,686] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['process_financials']) retrieved from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:05,714] {logging_mixin.py:104} INFO - [2021-04-07 12:41:05,714] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:41:05,739] {logging_mixin.py:104} INFO - [2021-04-07 12:41:05,739] {dag.py:2273} INFO - Setting next_dagrun for process_financials to 2021-04-06 22:50:24.317182+00:00
+[2021-04-07 12:41:05,793] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_operators.py took 0.531 seconds
+[2021-04-07 12:41:36,050] {scheduler_job.py:182} INFO - Started process (PID=23508) to work on /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:36,053] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/learn_operators.py for tasks to queue
+[2021-04-07 12:41:36,057] {logging_mixin.py:104} INFO - [2021-04-07 12:41:36,057] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:36,459] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['process_financials']) retrieved from /opt/airflow/dags/learn_operators.py
+[2021-04-07 12:41:36,488] {logging_mixin.py:104} INFO - [2021-04-07 12:41:36,488] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:41:36,524] {logging_mixin.py:104} INFO - [2021-04-07 12:41:36,524] {dag.py:2273} INFO - Setting next_dagrun for process_financials to 2021-04-06 22:50:24.317182+00:00
+[2021-04-07 12:41:36,578] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/learn_operators.py took 0.536 seconds

@@ -5564,3 +5564,17 @@
 [2021-04-07 12:40:16,250] {logging_mixin.py:104} INFO - [2021-04-07 12:40:16,249] {dag.py:1818} INFO - Sync 1 DAGs
 [2021-04-07 12:40:16,381] {logging_mixin.py:104} INFO - [2021-04-07 12:40:16,381] {dag.py:2273} INFO - Setting next_dagrun for trata_relatorios to 2021-04-07T12:00:00+00:00
 [2021-04-07 12:40:16,441] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_chamados.py took 0.541 seconds
+[2021-04-07 12:40:47,023] {scheduler_job.py:182} INFO - Started process (PID=23464) to work on /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:40:47,025] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/etl_chamados.py for tasks to queue
+[2021-04-07 12:40:47,032] {logging_mixin.py:104} INFO - [2021-04-07 12:40:47,032] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:40:47,128] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['trata_relatorios']) retrieved from /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:40:47,307] {logging_mixin.py:104} INFO - [2021-04-07 12:40:47,307] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:40:47,451] {logging_mixin.py:104} INFO - [2021-04-07 12:40:47,451] {dag.py:2273} INFO - Setting next_dagrun for trata_relatorios to 2021-04-07T12:00:00+00:00
+[2021-04-07 12:40:47,544] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_chamados.py took 0.546 seconds
+[2021-04-07 12:41:17,960] {scheduler_job.py:182} INFO - Started process (PID=23492) to work on /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:41:17,969] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/etl_chamados.py for tasks to queue
+[2021-04-07 12:41:17,970] {logging_mixin.py:104} INFO - [2021-04-07 12:41:17,970] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:41:18,013] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['trata_relatorios']) retrieved from /opt/airflow/dags/etl_chamados.py
+[2021-04-07 12:41:18,085] {logging_mixin.py:104} INFO - [2021-04-07 12:41:18,085] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-07 12:41:18,147] {logging_mixin.py:104} INFO - [2021-04-07 12:41:18,147] {dag.py:2273} INFO - Setting next_dagrun for trata_relatorios to 2021-04-07T12:00:00+00:00
+[2021-04-07 12:41:18,208] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_chamados.py took 0.251 seconds
