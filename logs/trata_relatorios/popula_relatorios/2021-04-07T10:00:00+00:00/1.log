@@ -329,3 +329,8 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-07T10:00:00+00:00
 [2021-04-07 12:41:11,848] {logging_mixin.py:104} INFO - Contador:  62
 [2021-04-07 12:41:11,849] {logging_mixin.py:104} INFO - Linhas:  305000
 [2021-04-07 12:41:11,849] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 12:42:01,262] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 12:42:01,263] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 12:42:01,263] {logging_mixin.py:104} INFO - Contador:  63
+[2021-04-07 12:42:01,265] {logging_mixin.py:104} INFO - Linhas:  310000
+[2021-04-07 12:42:01,265] {logging_mixin.py:104} INFO - Colunas:  33
