@@ -1,0 +1,27 @@
+[2021-04-07 03:37:36,590] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: super_simple_dag_v2.echo_exec_date 2021-04-06T03:36:40.935221+00:00 [queued]>
+[2021-04-07 03:37:36,815] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: super_simple_dag_v2.echo_exec_date 2021-04-06T03:36:40.935221+00:00 [queued]>
+[2021-04-07 03:37:36,820] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 03:37:36,822] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-07 03:37:36,822] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 03:37:37,044] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): echo_exec_date> on 2021-04-06T03:36:40.935221+00:00
+[2021-04-07 03:37:37,084] {standard_task_runner.py:52} INFO - Started process 13398 to run task
+[2021-04-07 03:37:37,142] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'super_simple_dag_v2', 'echo_exec_date', '2021-04-06T03:36:40.935221+00:00', '--job-id', '30', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/learn_dags.py', '--cfg-path', '/tmp/tmp3660_b0n', '--error-file', '/tmp/tmp3xbu1f72']
+[2021-04-07 03:37:37,266] {standard_task_runner.py:77} INFO - Job 30: Subtask echo_exec_date
+[2021-04-07 03:37:37,634] {logging_mixin.py:104} INFO - Running <TaskInstance: super_simple_dag_v2.echo_exec_date 2021-04-06T03:36:40.935221+00:00 [running]> on host ce03b876977a
+[2021-04-07 03:37:38,121] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=super_simple_dag_v2
+AIRFLOW_CTX_TASK_ID=echo_exec_date
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-06T03:36:40.935221+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-06T03:36:40.935221+00:00
+[2021-04-07 03:37:38,124] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-04-07 03:37:38,125] {bash.py:158} INFO - Running command: echo execution date: 2021-04-06T03:36:40.935221+00:00
+[2021-04-07 03:37:38,257] {bash.py:169} INFO - Output:
+[2021-04-07 03:37:38,289] {bash.py:173} INFO - execution date: 2021-04-06T03:36:40.935221+00:00
+[2021-04-07 03:37:38,299] {bash.py:177} INFO - Command exited with return code 0
+[2021-04-07 03:37:38,679] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=super_simple_dag_v2, task_id=echo_exec_date, execution_date=20210406T033640, start_date=20210407T033736, end_date=20210407T033738
+[2021-04-07 03:37:39,099] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-04-07 03:37:39,139] {local_task_job.py:146} INFO - Task exited with return code 0

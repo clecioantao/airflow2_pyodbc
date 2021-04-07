@@ -1,0 +1,85 @@
+[2021-04-07 03:29:50,979] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T03:29:49.729796+00:00 [queued]>
+[2021-04-07 03:29:51,044] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T03:29:49.729796+00:00 [queued]>
+[2021-04-07 03:29:51,044] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 03:29:51,044] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-07 03:29:51,044] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 03:29:51,093] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): popula_relatorios> on 2021-04-07T03:29:49.729796+00:00
+[2021-04-07 03:29:51,104] {standard_task_runner.py:52} INFO - Started process 12968 to run task
+[2021-04-07 03:29:51,116] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trata_relatorios', 'popula_relatorios', '2021-04-07T03:29:49.729796+00:00', '--job-id', '26', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_chamados.py', '--cfg-path', '/tmp/tmpdtx8fjws', '--error-file', '/tmp/tmpmdj9ea1j']
+[2021-04-07 03:29:51,128] {standard_task_runner.py:77} INFO - Job 26: Subtask popula_relatorios
+[2021-04-07 03:29:51,351] {logging_mixin.py:104} INFO - Running <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T03:29:49.729796+00:00 [running]> on host ce03b876977a
+[2021-04-07 03:29:51,533] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=clecio.antao@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trata_relatorios
+AIRFLOW_CTX_TASK_ID=popula_relatorios
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-07T03:29:49.729796+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-04-07T03:29:49.729796+00:00
+[2021-04-07 03:30:03,993] {logging_mixin.py:104} INFO - Total de linhas:  5000
+[2021-04-07 03:30:04,000] {logging_mixin.py:104} INFO - dGVjYmFu#43ad99800cc5abc3bf46582421eefab716b95b15
+[2021-04-07 03:30:04,001] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:30:04,004] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:30:04,004] {logging_mixin.py:104} INFO - Contador:  1
+[2021-04-07 03:30:04,005] {logging_mixin.py:104} INFO - Linhas:  0
+[2021-04-07 03:30:04,006] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:30:45,681] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:30:45,683] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:30:45,684] {logging_mixin.py:104} INFO - Contador:  2
+[2021-04-07 03:30:45,686] {logging_mixin.py:104} INFO - Linhas:  5000
+[2021-04-07 03:30:45,686] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:31:22,729] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:31:22,739] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:31:22,740] {logging_mixin.py:104} INFO - Contador:  3
+[2021-04-07 03:31:22,741] {logging_mixin.py:104} INFO - Linhas:  10000
+[2021-04-07 03:31:22,741] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:31:57,581] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:31:57,584] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:31:57,584] {logging_mixin.py:104} INFO - Contador:  4
+[2021-04-07 03:31:57,584] {logging_mixin.py:104} INFO - Linhas:  15000
+[2021-04-07 03:31:57,584] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:32:33,416] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:32:33,426] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:32:33,427] {logging_mixin.py:104} INFO - Contador:  5
+[2021-04-07 03:32:33,428] {logging_mixin.py:104} INFO - Linhas:  20000
+[2021-04-07 03:32:33,432] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:33:10,693] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:33:10,694] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:33:10,695] {logging_mixin.py:104} INFO - Contador:  6
+[2021-04-07 03:33:10,713] {logging_mixin.py:104} INFO - Linhas:  25000
+[2021-04-07 03:33:10,715] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:33:46,709] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:33:46,711] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:33:46,712] {logging_mixin.py:104} INFO - Contador:  7
+[2021-04-07 03:33:46,713] {logging_mixin.py:104} INFO - Linhas:  30000
+[2021-04-07 03:33:46,713] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:34:22,247] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:34:22,254] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:34:22,256] {logging_mixin.py:104} INFO - Contador:  8
+[2021-04-07 03:34:22,256] {logging_mixin.py:104} INFO - Linhas:  35000
+[2021-04-07 03:34:22,256] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:34:57,745] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:34:57,747] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:34:57,748] {logging_mixin.py:104} INFO - Contador:  9
+[2021-04-07 03:34:57,749] {logging_mixin.py:104} INFO - Linhas:  40000
+[2021-04-07 03:34:57,750] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:35:30,713] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:35:30,714] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:35:30,714] {logging_mixin.py:104} INFO - Contador:  10
+[2021-04-07 03:35:30,715] {logging_mixin.py:104} INFO - Linhas:  45000
+[2021-04-07 03:35:30,715] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:36:09,925] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:36:09,927] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:36:09,928] {logging_mixin.py:104} INFO - Contador:  11
+[2021-04-07 03:36:09,928] {logging_mixin.py:104} INFO - Linhas:  50000
+[2021-04-07 03:36:09,928] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 03:37:28,734] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 03:37:28,735] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 03:37:28,741] {logging_mixin.py:104} INFO - Contador:  12
+[2021-04-07 03:37:28,742] {logging_mixin.py:104} INFO - Linhas:  55000
+[2021-04-07 03:37:28,743] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:35:42,149] {local_task_job.py:188} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2021-04-07 09:35:42,188] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 12968
+[2021-04-07 09:35:43,569] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2021-04-07 09:35:44,190] {process_utils.py:66} INFO - Process psutil.Process(pid=12968, status='terminated', exitcode=0, started='03:29:50') (12968) terminated with exit code 0

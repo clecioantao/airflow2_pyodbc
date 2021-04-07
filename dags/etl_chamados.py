@@ -20,7 +20,7 @@ dag = DAG(
         'email': ['clecio.antao@gmail.com'],
         'email_on_failure': True,
     },
-    schedule_interval='*/50 * * * *',
+    schedule_interval='0 */2 * * *',
     start_date=days_ago(1),
     dagrun_timeout=timedelta(minutes=4),
     tags=['etl'],
@@ -32,13 +32,9 @@ def carrega_dados():
     import requests
     import json
     import sqlalchemy
-    import smtplib
-    from email.mime.text import MIMEText
-    from email.mime.multipart import MIMEMultipart
-    from datetime import datetime
             
     # CRIA ENGINE DE ORIGEM - CONNECT SQL SERVER
-    
+
     engineorigem = sqlalchemy.create_engine('mssql+pyodbc://sa:Proteu690201@192.168.2.90/deskmanager?driver=ODBC+Driver+17+for+SQL+Server')
         
     # AUTENTICAÇÃO API
@@ -46,63 +42,58 @@ def carrega_dados():
     pubkey = '\"ef89a6460dbd71f2e37a999514d2543b99509d4f\"'
     payload=" {\r\n  \"PublicKey\" :" + pubkey + "\r\n}"
     headers = {
-      'Authorization': '66e22b87364fa2946f2ce04dce1b8b59b669ab7f',
-      'Content-Type': 'application/json'
+    'Authorization': '66e22b87364fa2946f2ce04dce1b8b59b669ab7f',
+    'Content-Type': 'application/json'
     }
     token = requests.request("POST", url, headers=headers, data=payload)
     resp_token = json.loads(token.text)
     
-    # VERIFICA QUANTIDADE DE REGISTROS
+    print('Token: ', resp_token)
+
+    # ENTRA NA API PARA BUSCAR NUMERO DE COLUNAS
     url = "https://api.desk.ms/Relatorios/imprimir"
-    paginador = '\"' +  ' ' + '\"'
-    relatorio = "857"
-    payload="{\r\n  \"Chave\":\"857\", \r\n  \"APartirDe\":\"\", \r\n  \"Total\":\"\"\r\n}"
-    #payload="{\r\n  \"Chave\" :"  + relatorio +  ", \r\n  \"APartirDe\" : \" " + paginador + ", \r\n  \"Total\": \"\" \r\n}"
+    paginador = '\"' +  '0' + '\"'
+    relatorio = "875"
+    payload="{\r\n  \"Chave\" :"  + relatorio +  ", \r\n  \"APartirDe\" :" + paginador + ", \r\n  \"Total\": \"\" \r\n}"
     headers = {
-      'Authorization': resp_token,
-      'Content-Type': 'application/json'
+    'Authorization': resp_token,
+    'Content-Type': 'application/json'
     }
     resp = requests.request("POST", url, headers=headers, data=payload)
     resp_data = json.loads(resp.text)
     root = resp_data['root']
     df = pd.DataFrame(root)
-    index = df.index
-    total_linhas = len(index)
-    print('Total de linhas: ', total_linhas)
-    
-    # CRIAR LAÇO 
-    print(resp_token)
-    
-    #relatorios_total =  100000
+    colunas = len(df.columns)
+    ############################
+
     relatorios_pag = 0
-    paginas = 100000 #round((relatorios_total / 5000) + 0.5)
+    paginas = 5000 
     contador = 1
-    tabela = 'total_geral'
-      
-    while contador <= paginas:
-        print('entrou no laço')
+    tabela = 'chamados_streaming' ## nome da tabela que sera criada ou sobreposta
+    
+    while contador >= 1:
+
         print('Paginas: ', paginas)
         print('Contador: ', contador)
         print('Linhas: ',relatorios_pag)
-        print('Colunas: ',len(df.columns))
+        
         #################################
-        # LISTA DE relatorios - paginação de 3000 em 3000 
+        # LISTA DE relatorios - paginação de 5000 em 5000 
         url = "https://api.desk.ms/Relatorios/imprimir"
         paginador = '\"' +  str(relatorios_pag) + '\"'
-        relatorio = "857"
         payload="{\r\n  \"Chave\" :"  + relatorio +  ", \r\n  \"APartirDe\" :" + paginador + ", \r\n  \"Total\": \"\" \r\n}"
         headers = {
-          'Authorization': resp_token,
-          'Content-Type': 'application/json'
+        'Authorization': resp_token,
+        'Content-Type': 'application/json'
         }
         resp = requests.request("POST", url, headers=headers, data=payload)
         resp_data = json.loads(resp.text)
         root = resp_data['root']
         df = pd.DataFrame(root)
-       
+    
         # EXPORTANDO DADASET PARA TABELA BANCO SQL SERVER
         # CALCULA O CHUNKSIZE MÁXIMO E VERIFICA FINAL LINHAS
-        if len(df.columns):
+        if len(df.columns) == colunas:
             cs = 2097 // len(df.columns)  # duas barras faz a divisão e tras numero inteiro
             if cs > 1000:
                 cs = 1000
@@ -110,6 +101,7 @@ def carrega_dados():
                 cs = cs
         else:
             break
+        
         # INSERE DADOS TABELA SQL SEVER
         if relatorios_pag == 0:
             df.to_sql(name=tabela, con=engineorigem, if_exists='replace', chunksize=cs)

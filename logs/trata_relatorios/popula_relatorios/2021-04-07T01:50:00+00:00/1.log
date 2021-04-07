@@ -639,3 +639,7 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-07T01:50:00+00:00
 [2021-04-07 03:08:24,941] {logging_mixin.py:104} INFO - Contador:  124
 [2021-04-07 03:08:24,953] {logging_mixin.py:104} INFO - Linhas:  615000
 [2021-04-07 03:08:24,953] {logging_mixin.py:104} INFO - Colunas:  4
+[2021-04-07 09:35:35,891] {local_task_job.py:188} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2021-04-07 09:35:35,991] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 8057
+[2021-04-07 09:35:35,995] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2021-04-07 09:35:36,731] {process_utils.py:66} INFO - Process psutil.Process(pid=8057, status='terminated', exitcode=0, started='02:00:01') (8057) terminated with exit code 0

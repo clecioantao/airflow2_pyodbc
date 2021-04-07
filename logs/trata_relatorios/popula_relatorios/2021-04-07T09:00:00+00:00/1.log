@@ -1,0 +1,266 @@
+[2021-04-07 09:50:01,996] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T09:00:00+00:00 [queued]>
+[2021-04-07 09:50:02,065] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T09:00:00+00:00 [queued]>
+[2021-04-07 09:50:02,068] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 09:50:02,070] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-07 09:50:02,070] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-07 09:50:02,112] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): popula_relatorios> on 2021-04-07T09:00:00+00:00
+[2021-04-07 09:50:02,117] {standard_task_runner.py:52} INFO - Started process 14213 to run task
+[2021-04-07 09:50:02,138] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trata_relatorios', 'popula_relatorios', '2021-04-07T09:00:00+00:00', '--job-id', '33', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_chamados.py', '--cfg-path', '/tmp/tmprqoc4lph', '--error-file', '/tmp/tmp18gnvq7d']
+[2021-04-07 09:50:02,148] {standard_task_runner.py:77} INFO - Job 33: Subtask popula_relatorios
+[2021-04-07 09:50:02,350] {logging_mixin.py:104} INFO - Running <TaskInstance: trata_relatorios.popula_relatorios 2021-04-07T09:00:00+00:00 [running]> on host ce03b876977a
+[2021-04-07 09:50:02,782] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=clecio.antao@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trata_relatorios
+AIRFLOW_CTX_TASK_ID=popula_relatorios
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-07T09:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-07T09:00:00+00:00
+[2021-04-07 09:50:13,277] {logging_mixin.py:104} INFO - Total de linhas:  5000
+[2021-04-07 09:50:13,282] {logging_mixin.py:104} INFO - dGVjYmFu#a3f9575045e5cd17355e2e207d9cab0b1f21c265
+[2021-04-07 09:50:13,299] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:50:13,299] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:50:13,299] {logging_mixin.py:104} INFO - Contador:  1
+[2021-04-07 09:50:13,299] {logging_mixin.py:104} INFO - Linhas:  0
+[2021-04-07 09:50:13,299] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:51:29,031] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:51:29,036] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:51:29,043] {logging_mixin.py:104} INFO - Contador:  2
+[2021-04-07 09:51:29,047] {logging_mixin.py:104} INFO - Linhas:  5000
+[2021-04-07 09:51:29,051] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:52:19,910] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:52:19,921] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:52:19,924] {logging_mixin.py:104} INFO - Contador:  3
+[2021-04-07 09:52:19,925] {logging_mixin.py:104} INFO - Linhas:  10000
+[2021-04-07 09:52:19,926] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:53:07,674] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:53:07,694] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:53:07,695] {logging_mixin.py:104} INFO - Contador:  4
+[2021-04-07 09:53:07,695] {logging_mixin.py:104} INFO - Linhas:  15000
+[2021-04-07 09:53:07,695] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:53:54,634] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:53:54,645] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:53:54,661] {logging_mixin.py:104} INFO - Contador:  5
+[2021-04-07 09:53:54,666] {logging_mixin.py:104} INFO - Linhas:  20000
+[2021-04-07 09:53:54,668] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:54:41,797] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:54:41,811] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:54:41,811] {logging_mixin.py:104} INFO - Contador:  6
+[2021-04-07 09:54:41,811] {logging_mixin.py:104} INFO - Linhas:  25000
+[2021-04-07 09:54:41,811] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:55:32,093] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:55:32,095] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:55:32,103] {logging_mixin.py:104} INFO - Contador:  7
+[2021-04-07 09:55:32,105] {logging_mixin.py:104} INFO - Linhas:  30000
+[2021-04-07 09:55:32,105] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:56:21,121] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:56:21,123] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:56:21,125] {logging_mixin.py:104} INFO - Contador:  8
+[2021-04-07 09:56:21,125] {logging_mixin.py:104} INFO - Linhas:  35000
+[2021-04-07 09:56:21,125] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:57:15,018] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:57:15,025] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:57:15,026] {logging_mixin.py:104} INFO - Contador:  9
+[2021-04-07 09:57:15,026] {logging_mixin.py:104} INFO - Linhas:  40000
+[2021-04-07 09:57:15,026] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:58:04,337] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:58:04,342] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:58:04,347] {logging_mixin.py:104} INFO - Contador:  10
+[2021-04-07 09:58:04,348] {logging_mixin.py:104} INFO - Linhas:  45000
+[2021-04-07 09:58:04,348] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:59:01,645] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:59:01,655] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:59:01,656] {logging_mixin.py:104} INFO - Contador:  11
+[2021-04-07 09:59:01,656] {logging_mixin.py:104} INFO - Linhas:  50000
+[2021-04-07 09:59:01,656] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 09:59:56,824] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 09:59:56,835] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 09:59:56,840] {logging_mixin.py:104} INFO - Contador:  12
+[2021-04-07 09:59:56,844] {logging_mixin.py:104} INFO - Linhas:  55000
+[2021-04-07 09:59:56,846] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 10:00:52,592] {logging_mixin.py:104} INFO - entrou no laço
+[2021-04-07 10:00:52,597] {logging_mixin.py:104} INFO - Paginas:  100000
+[2021-04-07 10:00:52,599] {logging_mixin.py:104} INFO - Contador:  13
+[2021-04-07 10:00:52,603] {logging_mixin.py:104} INFO - Linhas:  60000
+[2021-04-07 10:00:52,606] {logging_mixin.py:104} INFO - Colunas:  33
+[2021-04-07 10:01:05,152] {taskinstance.py:1455} ERROR - (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'total_geral'. (208) (SQLExecDirectW)")
+[SQL: INSERT INTO total_geral ([index], [CodChamado], [Assunto], [DataCriacao], [DataFinalizacao], [HoraFinalizacao], [HoraCriacao], [PrimeiroAtendimentoData], [NomeStatus], [NomeCompletoOperador], [NomeSolicitacao], [NomeCategoria], [NomeSubCategoria], [NomeTipo], [NomeTipoOcorrencia], [NomeGrupo], [Fantasia], [NomeCausa], [Sla1Expirado], [SequenciaPrioridade], [NomePrioridade], [ChaveSla], [NomeSla], [SlaAndamento], [TempoRestantePrimeiroAtendimento], [TempoRestanteSegundoAtendimento], [Sla2Expirado], [TempoAtendimento], [NomeOperador], [NomeCompletoSolicitante], [NomeDepartamento], [ExpiraEm], _2151, [ChamadoAprovadores]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((0, '1220-008503', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '14:13', '09:02', '16-12-2020 13:47:04', 'FINALIZADO', 'Wilson Barbosa Leite', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CONGONHAS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '03:15:43', '47:15:43', 'Em Dia', '04:45', 'Wilson', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (1, '1220-008502', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:17', '09:02', '16-12-2020 09:17:26', 'FINALIZADO', 'Daniel Paulo de Oliveira Silva', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SAO JOSE DOS CAMPOS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:49:29', '51:49:29', 'Em Dia', '00:15', 'Daniel', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (2, '1220-008501', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '10:58', '09:02', '16-12-2020 10:00:56', 'FINALIZADO', 'Andre Fabiano Verissimo Jardim', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SANTOS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:01:50', '50:09:31', 'Em Dia', '00:58', 'Andre', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (3, '1220-008500', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:03', '09:02', '17-12-2020 10:03:24', 'FINALIZADO', 'Hara Mateus dos Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - BAURU', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '01:51:27', '27:06:32', 'Em Dia', '25:01', 'Hara', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (4, '1220-008499', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '13:41', '09:02', '16-12-2020 09:31:15', 'FINALIZADO', 'Sergio Barbosa de Oliveira', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CAMPINAS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:31:29', '47:26:29', 'Em Dia', '00:29', 'Sergio', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (5, '1220-008498', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:26', '09:02', '16-12-2020 09:19:30', 'FINALIZADO', 'Eder Fatimo Moreno Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SÃO MATEUS', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:43:14', '51:42:28', 'Em Dia', '00:17', 'Eder', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (6, '1220-008497', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:33', '09:02', '16-12-2020 12:07:33', 'FINALIZADO', 'Thalles Rogerio de Mello', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - LIMÃO', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '04:55:10', '26:37:29', 'Em Dia', '03:05', 'Thalles', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (7, '1220-008496', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:15', '09:02', '16-12-2020 09:08:40', 'FINALIZADO', 'Eric Cristie Pimentel', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SEDE', 'OUTROS', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:54:02', '51:56:26', 'Em Dia', '00:06', 'Eric', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None)  ... displaying 10 of 63 total bound parameter sets ...  (61, '1220-008442', 'Acessos - Liberar - Sistemas TBForte - Aprovador Cesar Do Espirito Santo Mateus Junior (Ger. Seg. Operacional)', '16-12-2020', '23-12-2020', '11:39', '08:37', '16-12-2020 14:11:45', 'FINALIZADO', 'Adriana Bispo Ribeiro da Cunha Santana Mendes', 'PORTAL DO CLIENTE', 'Acessos', 'Liberar - Sistemas TBForte', 'LIBERAR ACESSO', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - PORTO ALEGRE', 'SOLICITAÇÃO', 'Em Dia', '000003', '3 - MODERADA', 25.0, 'SLA Padrão - Sistemas', 'Em Andamento', '21:19:15', '190:01:15', 'Em Dia', '05:34', 'Adriana', 'Sadi Oliveira da Silva Junior', 'SEGURANÇA', '2020-12-31 09:31', '', 'OP - Rosemery Morais Silva: Aprovado - 1º Interação'), (62, '1220-008441', 'T.I. Sistemas - ERP Infra - Tesouraria - Header Card - Ajustar', '16-12-2020', '16-12-2020', '08:44', '08:36', '16-12-2020 08:40:29', 'FINALIZADO', 'Felipe Cardelli de Camargo', 'PORTAL DO CLIENTE', 'T.I. Sistemas - ERP Infra', 'Tesouraria - Header Card', 'AJUSTAR', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - SÃO CRISTÓVÃO', 'CONFIGURACAO', 'Em Dia', '000001', '1 - MUITO ALTA', 139.0, 'SLA TI - Sistemas - Tesouraria - Header Card - 08h', 'Em Andamento', '07:55:41', '25:55:41', 'Em Dia', '00:04', 'Felipe', 'DANIEL DA SILVA GUIMARAES', 'TESOURARIA', '2020-12-17 10:36', '', None))]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1257, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py", line 448, in do_executemany
+    cursor, statement, parameters, context=context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 605, in do_executemany
+    cursor.executemany(statement, parameters)
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'total_geral'. (208) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 117, in carrega_dados
+    df.to_sql(name=tabela, con=engineorigem, if_exists='append', chunksize=cs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 2615, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 598, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1406, in to_sql
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1398, in to_sql
+    table.insert(chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 830, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 747, in _execute_insert
+    conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1257, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py", line 448, in do_executemany
+    cursor, statement, parameters, context=context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 605, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'total_geral'. (208) (SQLExecDirectW)")
+[SQL: INSERT INTO total_geral ([index], [CodChamado], [Assunto], [DataCriacao], [DataFinalizacao], [HoraFinalizacao], [HoraCriacao], [PrimeiroAtendimentoData], [NomeStatus], [NomeCompletoOperador], [NomeSolicitacao], [NomeCategoria], [NomeSubCategoria], [NomeTipo], [NomeTipoOcorrencia], [NomeGrupo], [Fantasia], [NomeCausa], [Sla1Expirado], [SequenciaPrioridade], [NomePrioridade], [ChaveSla], [NomeSla], [SlaAndamento], [TempoRestantePrimeiroAtendimento], [TempoRestanteSegundoAtendimento], [Sla2Expirado], [TempoAtendimento], [NomeOperador], [NomeCompletoSolicitante], [NomeDepartamento], [ExpiraEm], _2151, [ChamadoAprovadores]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((0, '1220-008503', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '14:13', '09:02', '16-12-2020 13:47:04', 'FINALIZADO', 'Wilson Barbosa Leite', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CONGONHAS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '03:15:43', '47:15:43', 'Em Dia', '04:45', 'Wilson', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (1, '1220-008502', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:17', '09:02', '16-12-2020 09:17:26', 'FINALIZADO', 'Daniel Paulo de Oliveira Silva', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SAO JOSE DOS CAMPOS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:49:29', '51:49:29', 'Em Dia', '00:15', 'Daniel', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (2, '1220-008501', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '10:58', '09:02', '16-12-2020 10:00:56', 'FINALIZADO', 'Andre Fabiano Verissimo Jardim', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SANTOS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:01:50', '50:09:31', 'Em Dia', '00:58', 'Andre', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (3, '1220-008500', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:03', '09:02', '17-12-2020 10:03:24', 'FINALIZADO', 'Hara Mateus dos Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - BAURU', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '01:51:27', '27:06:32', 'Em Dia', '25:01', 'Hara', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (4, '1220-008499', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '13:41', '09:02', '16-12-2020 09:31:15', 'FINALIZADO', 'Sergio Barbosa de Oliveira', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CAMPINAS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:31:29', '47:26:29', 'Em Dia', '00:29', 'Sergio', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (5, '1220-008498', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:26', '09:02', '16-12-2020 09:19:30', 'FINALIZADO', 'Eder Fatimo Moreno Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SÃO MATEUS', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:43:14', '51:42:28', 'Em Dia', '00:17', 'Eder', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (6, '1220-008497', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:33', '09:02', '16-12-2020 12:07:33', 'FINALIZADO', 'Thalles Rogerio de Mello', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - LIMÃO', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '04:55:10', '26:37:29', 'Em Dia', '03:05', 'Thalles', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (7, '1220-008496', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:15', '09:02', '16-12-2020 09:08:40', 'FINALIZADO', 'Eric Cristie Pimentel', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SEDE', 'OUTROS', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:54:02', '51:56:26', 'Em Dia', '00:06', 'Eric', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None)  ... displaying 10 of 63 total bound parameter sets ...  (61, '1220-008442', 'Acessos - Liberar - Sistemas TBForte - Aprovador Cesar Do Espirito Santo Mateus Junior (Ger. Seg. Operacional)', '16-12-2020', '23-12-2020', '11:39', '08:37', '16-12-2020 14:11:45', 'FINALIZADO', 'Adriana Bispo Ribeiro da Cunha Santana Mendes', 'PORTAL DO CLIENTE', 'Acessos', 'Liberar - Sistemas TBForte', 'LIBERAR ACESSO', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - PORTO ALEGRE', 'SOLICITAÇÃO', 'Em Dia', '000003', '3 - MODERADA', 25.0, 'SLA Padrão - Sistemas', 'Em Andamento', '21:19:15', '190:01:15', 'Em Dia', '05:34', 'Adriana', 'Sadi Oliveira da Silva Junior', 'SEGURANÇA', '2020-12-31 09:31', '', 'OP - Rosemery Morais Silva: Aprovado - 1º Interação'), (62, '1220-008441', 'T.I. Sistemas - ERP Infra - Tesouraria - Header Card - Ajustar', '16-12-2020', '16-12-2020', '08:44', '08:36', '16-12-2020 08:40:29', 'FINALIZADO', 'Felipe Cardelli de Camargo', 'PORTAL DO CLIENTE', 'T.I. Sistemas - ERP Infra', 'Tesouraria - Header Card', 'AJUSTAR', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - SÃO CRISTÓVÃO', 'CONFIGURACAO', 'Em Dia', '000001', '1 - MUITO ALTA', 139.0, 'SLA TI - Sistemas - Tesouraria - Header Card - 08h', 'Em Andamento', '07:55:41', '25:55:41', 'Em Dia', '00:04', 'Felipe', 'DANIEL DA SILVA GUIMARAES', 'TESOURARIA', '2020-12-17 10:36', '', None))]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2021-04-07 10:01:05,213] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trata_relatorios, task_id=popula_relatorios, execution_date=20210407T090000, start_date=20210407T095002, end_date=20210407T100105
+[2021-04-07 10:01:05,289] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-07 10:01:05,291] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-07 10:01:05,292] {configuration.py:356} WARNING - section/key [smtp/smtp_user] not found in config
+[2021-04-07 10:01:05,294] {email.py:184} INFO - Email alerting: attempt 1
+[2021-04-07 10:01:05,295] {taskinstance.py:1509} ERROR - Failed to send email to: ['clecio.antao@gmail.com']
+[2021-04-07 10:01:05,301] {taskinstance.py:1510} ERROR - [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1257, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py", line 448, in do_executemany
+    cursor, statement, parameters, context=context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 605, in do_executemany
+    cursor.executemany(statement, parameters)
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'total_geral'. (208) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_chamados.py", line 117, in carrega_dados
+    df.to_sql(name=tabela, con=engineorigem, if_exists='append', chunksize=cs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 2615, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 598, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1406, in to_sql
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1398, in to_sql
+    table.insert(chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 830, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 747, in _execute_insert
+    conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1257, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/dialects/mssql/pyodbc.py", line 448, in do_executemany
+    cursor, statement, parameters, context=context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 605, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'total_geral'. (208) (SQLExecDirectW)")
+[SQL: INSERT INTO total_geral ([index], [CodChamado], [Assunto], [DataCriacao], [DataFinalizacao], [HoraFinalizacao], [HoraCriacao], [PrimeiroAtendimentoData], [NomeStatus], [NomeCompletoOperador], [NomeSolicitacao], [NomeCategoria], [NomeSubCategoria], [NomeTipo], [NomeTipoOcorrencia], [NomeGrupo], [Fantasia], [NomeCausa], [Sla1Expirado], [SequenciaPrioridade], [NomePrioridade], [ChaveSla], [NomeSla], [SlaAndamento], [TempoRestantePrimeiroAtendimento], [TempoRestanteSegundoAtendimento], [Sla2Expirado], [TempoAtendimento], [NomeOperador], [NomeCompletoSolicitante], [NomeDepartamento], [ExpiraEm], _2151, [ChamadoAprovadores]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((0, '1220-008503', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '14:13', '09:02', '16-12-2020 13:47:04', 'FINALIZADO', 'Wilson Barbosa Leite', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CONGONHAS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '03:15:43', '47:15:43', 'Em Dia', '04:45', 'Wilson', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (1, '1220-008502', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:17', '09:02', '16-12-2020 09:17:26', 'FINALIZADO', 'Daniel Paulo de Oliveira Silva', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SAO JOSE DOS CAMPOS', 'CONFIGURACAO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:49:29', '51:49:29', 'Em Dia', '00:15', 'Daniel', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-16 17:02', '', None), (2, '1220-008501', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '10:58', '09:02', '16-12-2020 10:00:56', 'FINALIZADO', 'Andre Fabiano Verissimo Jardim', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SANTOS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:01:50', '50:09:31', 'Em Dia', '00:58', 'Andre', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (3, '1220-008500', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:03', '09:02', '17-12-2020 10:03:24', 'FINALIZADO', 'Hara Mateus dos Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - BAURU', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '01:51:27', '27:06:32', 'Em Dia', '25:01', 'Hara', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (4, '1220-008499', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '13:41', '09:02', '16-12-2020 09:31:15', 'FINALIZADO', 'Sergio Barbosa de Oliveira', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - CAMPINAS', 'SOLICITAÇÃO', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:31:29', '47:26:29', 'Em Dia', '00:29', 'Sergio', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (5, '1220-008498', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:26', '09:02', '16-12-2020 09:19:30', 'FINALIZADO', 'Eder Fatimo Moreno Santos', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SÃO MATEUS', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:43:14', '51:42:28', 'Em Dia', '00:17', 'Eder', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (6, '1220-008497', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '17-12-2020', '10:33', '09:02', '16-12-2020 12:07:33', 'FINALIZADO', 'Thalles Rogerio de Mello', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - LIMÃO', 'EM CONFORMIDADE', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '04:55:10', '26:37:29', 'Em Dia', '03:05', 'Thalles', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None), (7, '1220-008496', 'T.I. Infraestrutura - Procedimentos Internos - Realizar Tarefas Administrativas', '16-12-2020', '16-12-2020', '09:15', '09:02', '16-12-2020 09:08:40', 'FINALIZADO', 'Eric Cristie Pimentel', 'TAREFA', 'T.I. - Procedimentos Internos', 'Realizar Tarefas Administrativas', 'Verificar', 'PREVENTIVO DIÁRIO', 'T.I. - Infraestrutura', 'TBFORTE - SEDE', 'OUTROS', 'Em Dia', '000005', '5 - PLANEJADA', 24.0, 'SLA Padrão - Infra', 'Em Andamento', '07:54:02', '51:56:26', 'Em Dia', '00:06', 'Eric', 'ROGERIO ALVES DA SILVA', 'TI', '2020-12-18 13:02', '', None)  ... displaying 10 of 63 total bound parameter sets ...  (61, '1220-008442', 'Acessos - Liberar - Sistemas TBForte - Aprovador Cesar Do Espirito Santo Mateus Junior (Ger. Seg. Operacional)', '16-12-2020', '23-12-2020', '11:39', '08:37', '16-12-2020 14:11:45', 'FINALIZADO', 'Adriana Bispo Ribeiro da Cunha Santana Mendes', 'PORTAL DO CLIENTE', 'Acessos', 'Liberar - Sistemas TBForte', 'LIBERAR ACESSO', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - PORTO ALEGRE', 'SOLICITAÇÃO', 'Em Dia', '000003', '3 - MODERADA', 25.0, 'SLA Padrão - Sistemas', 'Em Andamento', '21:19:15', '190:01:15', 'Em Dia', '05:34', 'Adriana', 'Sadi Oliveira da Silva Junior', 'SEGURANÇA', '2020-12-31 09:31', '', 'OP - Rosemery Morais Silva: Aprovado - 1º Interação'), (62, '1220-008441', 'T.I. Sistemas - ERP Infra - Tesouraria - Header Card - Ajustar', '16-12-2020', '16-12-2020', '08:44', '08:36', '16-12-2020 08:40:29', 'FINALIZADO', 'Felipe Cardelli de Camargo', 'PORTAL DO CLIENTE', 'T.I. Sistemas - ERP Infra', 'Tesouraria - Header Card', 'AJUSTAR', 'SOLICITAÇÃO', 'T.I. - Sistemas', 'TBFORTE - SÃO CRISTÓVÃO', 'CONFIGURACAO', 'Em Dia', '000001', '1 - MUITO ALTA', 139.0, 'SLA TI - Sistemas - Tesouraria - Header Card - 08h', 'Em Andamento', '07:55:41', '25:55:41', 'Em Dia', '00:04', 'Felipe', 'DANIEL DA SILVA GUIMARAES', 'TESOURARIA', '2020-12-17 10:36', '', None))]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1852, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1507, in handle_failure
+    self.email_alert(error)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1854, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 62, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 97, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 186, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/email.py", line 220, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+[2021-04-07 10:01:05,435] {local_task_job.py:146} INFO - Task exited with return code 1
