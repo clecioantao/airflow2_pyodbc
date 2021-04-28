@@ -46,6 +46,15 @@ x-airflow-common:
   image: ${AIRFLOW_IMAGE_NAME:-clecio/airflow_pyodbc:2.0.1}
   environment:
     &airflow-common-env
+    INSTALL_MYSQL: y
+    LOAD_EX: n
+    EXECUTOR: Local
+    AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com
+    AIRFLOW__SMTP__SMTP_USER: clecio.antao@gmail.com
+    AIRFLOW__SMTP__SMTP_PASSWORD: 'Proteu690201@'
+    AIRFLOW__SMTP__SMTP_PORT: 465
+    AIRFLOW__SMTP__SMTP_MAIL_FROM: Airflow
+
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__FERNET_KEY: ''
@@ -57,11 +66,13 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./init:/opt/airflow/init
+    - ./secrets:/opt/airflow/secrets
+    - ./plugins:/opt/airflow/plugins
+    - ./sql_files:/opt/airflow/sql_files
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     postgres:
       condition: service_healthy
-
 
 services:
   postgres:
@@ -80,15 +91,59 @@ services:
       retries: 5
     restart: always
 
+  pgadmin4:
+    container_name: pgadmin4
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-clecio.antao@gmail.com.br}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-Proteu690201}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - 8001:80
+    depends_on:
+      - postgres    
+    restart: always      
+    volumes:
+      - pgadmin:/root/.pgadmin
+    restart: always
+
+  mysql:
+    image: mysql:5.6
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./dags/data:/store_files_mysql/
+      - ./mysql.cnf:/etc/mysql/mysql.cnf
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=app_development
+    restart: always
+
+  sqlserver1:
+      image: 'microsoft/mssql-server-linux' 
+      container_name: mssql_bd
+      ports:  
+        - "1434:1433"
+      environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=Proteu690201
+      volumes: 
+        - sqlsystem:/var/opt/mssql/
+        - sqldata:/var/opt/sqlserver/data
+        - sqllog:/var/opt/sqlserver/log
+        - sqlbackup:/var/opt/sqlserver/backup
+      restart: always
+
   airflow-webserver:
     <<: *airflow-common
     container_name: airflow
     # command: webserver
     entrypoint: /opt/airflow/init/start_airflow.sh
     ports:
-      - 8080:8080
+      - 8082:8080
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://192.168.2.92:8080/health"]
+      test: ["CMD", "curl", "--fail", "http://192.168.2.120:8082/health"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -105,6 +160,74 @@ services:
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
       _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
 
+  cloudera:
+    image: cloudera/quickstart:latest
+    container_name: cloudera
+    privileged: true
+    hostname: quickstart.cloudera
+    command: /usr/bin/docker-quickstart
+    ports:
+      - "8020:8020"   # HDFS 
+      - "8022:22"     # SSH
+      - "7180:7180"   # Cloudera Manager
+      - "8888:8888"   # Hue
+      - "11000:11000" # Oozie
+      - "50070:50070" # HDFS Rest Namenode
+      - "50075:50075" # HDFS Rest Datanode
+      - "2181:2181"   # Zookeeper
+      - "8088:8088"   # YARN Resource Manager
+      - "19888:19888" # MapReduce Job History
+      - "50030:50030" # MapReduce Job Tracker
+      - "8983:8983"   # Solr
+      - "16000:16000" # Sqoop Metastore
+      - "8042:8042"   # YARN Node Manager
+      - "60010:60010" # HBase Master
+      - "60030:60030" # HBase Region
+      - "9090:9090"   # HBase Thrift
+      - "8089:8080"   # HBase Rest
+      - "7077:7077"   # Spark Master
+    tty: true
+    stdin_open: true
+    volumes: 
+      - /var/shared_cloudera_quickstart:/media/shared_from_local
+
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata01:/usr/share/elasticsearch/data
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.0
+    container_name: kibana
+    restart: unless-stopped
+    ports:
+      - "5601:5601"
+    environment:
+      - SERVER_NAME=kibana.local
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+
 
 volumes:
   postgres-db-volume:
+  data:
+  pgadmin:
+  sqlsystem:
+  sqldata:
+  sqllog:
+  sqlbackup:    
+  esdata01:
+    driver: local

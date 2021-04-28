@@ -1,6 +1,6 @@
-# VERSION 1.10.9
-# AUTHOR: Matthieu "Puckel_" Roisil
-# DESCRIPTION: Basic Airflow container
+# VERSION 2.0.1
+# AUTHOR: Clecio Antao
+# DESCRIPTION: Imagem Airflow 2.0.1 with PyODBC
 # BUILD: docker build -t clecio/airflow_pyodbc:1.10.9 .
 # SOURCE: 
 
@@ -31,6 +31,11 @@ RUN apt-get install -y --reinstall --upgrade \
 RUN pip install --upgrade \
         six \
         pyodbc \
+        es_pandas \
+        progressbar \
+        progressbar2 \
+        pip install psutil \
+        pip install 'apache-airflow-providers-microsoft-mssql' \
         psycopg2-binary && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
