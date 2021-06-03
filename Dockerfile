@@ -23,7 +23,8 @@ RUN apt-get update && \
         msodbcsql \
         mssql-tools \
         unixodbc-dev \
-        libssl1.0.0  
+        libssl1.0.0 
+        
 RUN apt-get install -y --reinstall --upgrade \
         g++ \
         gcc && \
@@ -38,8 +39,8 @@ RUN pip install --upgrade \
         pip install 'apache-airflow-providers-microsoft-mssql' \
         psycopg2-binary && \
     rm -rf /var/lib/apt/lists/* && \
-    apt-get clean
-
+    apt-get clean 
+   
 USER airflow
 
 RUN pip install fabric3==1.14.post1 flask_bcrypt==0.7.1 slackclient==1.3.1 boto3==1.9.143 xlrd==1.2.0 hvac==0.6.4 flatten_json==0.1.6 --user

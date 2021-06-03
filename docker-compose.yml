@@ -43,7 +43,7 @@
 version: '3.8'
 x-airflow-common:
   &airflow-common
-  image: ${AIRFLOW_IMAGE_NAME:-clecio/airflow_pyodbc:2.0.1}
+  image: ${AIRFLOW_IMAGE_NAME:-clecio/airflow_pyodbc:2.0.2}
   environment:
     &airflow-common-env
     INSTALL_MYSQL: y
@@ -54,15 +54,18 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_PASSWORD: 'Proteu690201@'
     AIRFLOW__SMTP__SMTP_PORT: 465
     AIRFLOW__SMTP__SMTP_MAIL_FROM: Airflow
-
+    AIRFLOW__CORE__MIN_SERIALIZED_DAG_UPDATE_INTERVAL: 0
+    AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 30
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__SCHEDULER__CATCHUP_BY_DEFAULT: 'false'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__WEBSERVER__WORKERS: 2
   volumes:
+    - ./config:/opt/airflow/config
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./init:/opt/airflow/init
@@ -107,18 +110,37 @@ services:
       - pgadmin:/root/.pgadmin
     restart: always
 
-  mysql:
-    image: mysql:5.6
-    container_name: mysql
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./dags/data:/store_files_mysql/
-      - ./mysql.cnf:/etc/mysql/mysql.cnf
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=app_development
-    restart: always
+  # mysql:
+  #   image: mysql:5.6
+  #   container_name: mysql
+  #   ports:
+  #     - "3306:3306"
+  #   volumes:
+  #     - ./dags/data:/store_files_mysql/
+  #     - ./mysql.cnf:/etc/mysql/mysql.cnf
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=root
+  #     - MYSQL_DATABASE=app_development
+  #   restart: always
+
+#   # MySQL
+#   mysql:
+#     container_name: mysql
+#     image: mysql:8.0
+#     command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+#     environment:
+#       MYSQL_ROOT_PASSWORD: root
+# #      MYSQL_DATABASE: sandbox
+# #      MYSQL_USER: sandbox_user
+# #      MYSQL_PASSWORD: passpass
+#       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+#     ports:
+#       - '3306:3306'
+#     # volumes:
+#     #   - './db/data:/var/lib/mysql'
+#     #   - './db/my.cnf:/etc/mysql/conf.d/my.cnf'
+#     #   - './db/sql:/docker-entrypoint-initdb.d'  
+#     restart: always
 
   sqlserver1:
       image: 'microsoft/mssql-server-linux' 
@@ -183,7 +205,7 @@ services:
       - "8042:8042"   # YARN Node Manager
       - "60010:60010" # HBase Master
       - "60030:60030" # HBase Region
-      - "9090:9090"   # HBase Thrift
+      - "9091:9090"   # HBase Thrift
       - "8089:8080"   # HBase Rest
       - "7077:7077"   # Spark Master
     tty: true
@@ -191,35 +213,64 @@ services:
     volumes: 
       - /var/shared_cloudera_quickstart:/media/shared_from_local
 
-  elasticsearch:
-    container_name: elasticsearch
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
-    restart: unless-stopped
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - discovery.type=single-node
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    volumes:
-      - esdata01:/usr/share/elasticsearch/data
+  # grafana:
+  #   container_name: grafana
+  #   image: grafana/grafana:7.5.6 # 6.1.2  # 7.4.5 # 6.7.6 # 7.1.3 # 7.5.6
+  #   ports:
+  #     - 3000:3000
+  #   volumes: 
+  #     - grafana-storage:/var/lib/grafana
+  #   environment: 
+  #     GF_SMTP_ENABLED: "true"
+  #     GF_SMTP_HOST: "smtp.gmail.com:465"
+  #     GF_SMTP_USER: "clecio.antao@gmail.com"
+  #     GF_SMTP_PASSWORD: "Proteu690201@"
+  #     GF_SMTP_SKIP_VERIFY: "true"
+  #     GF_SMTP_FROM_ADDRESS: "clecio.antao@gmail.com"
+  #     GF_SMTP_FROM_NAME: "clecio.antao@gmail.com"
 
-  kibana:
-    image: docker.elastic.co/kibana/kibana:7.10.0
-    container_name: kibana
-    restart: unless-stopped
-    ports:
-      - "5601:5601"
-    environment:
-      - SERVER_NAME=kibana.local
-      - ELASTICSEARCH_URL=http://elasticsearch:9200
-    depends_on:
-      - elasticsearch
 
+  # graphite-statsd:
+  #   image: graphiteapp/graphite-statsd
+  #   ports:
+  #     - 2003-2004:2003-2004
+  #     - 2023-2024:2023-2024
+  #     - 8125:8125/udp
+  #     - 8126:8126
+  #     - 8090:80     
+  #   volumes: 
+  #     - ./graph_config:/opt/graphite/conf
+  #     - graphite:/opt/graphite/storage/whisper
+  #   restart: always
+
+  # elasticsearch:
+  #   container_name: elasticsearch
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+  #   restart: unless-stopped
+  #   ports:
+  #     - "9200:9200"
+  #     - "9300:9300"
+  #   environment:
+  #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #     - discovery.type=single-node
+  #   ulimits:
+  #     memlock:
+  #       soft: -1
+  #       hard: -1
+  #   volumes:
+  #     - esdata01:/usr/share/elasticsearch/data
+
+  # kibana:
+  #   image: docker.elastic.co/kibana/kibana:7.10.0
+  #   container_name: kibana
+  #   restart: unless-stopped
+  #   ports:
+  #     - "5601:5601"
+  #   environment:
+  #     - SERVER_NAME=kibana.local
+  #     - ELASTICSEARCH_URL=http://elasticsearch:9200
+  #   depends_on:
+  #     - elasticsearch
 
 volumes:
   postgres-db-volume:

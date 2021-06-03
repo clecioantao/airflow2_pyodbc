@@ -1,0 +1,195 @@
+PUT desk_streaming_completo
+{
+	"mappings" : {
+		"properties" : {
+			"CodChamado" : {"type": "keyword"}, 
+			"DataCriacao" : {"type": "date", "format": "dd-MM-yyyy"}, 
+			"DataFinalizacao" : {"type": "date", "format": "dd-MM-yyyy"},
+			"NomeOperador" : { "type" : "keyword" },
+			"NomeStatus" : { "type" : "keyword" },
+			"Sla1Expirado" : { "type" : "keyword" },
+			"Sla2Expirado" : { "type" : "keyword" },
+			"Fantasia" : { "type" : "keyword" },
+			"NomeSubCategoria" : { "type" : "keyword" },
+			"Quantidade" : { "type" : "integer" }
+		}
+	}
+}
+
+PUT cpu_mem_disco
+{
+	"mappings" : {
+		"properties" : {
+      "CPU_frequencia" : { "type" : "integer" },
+      "CPU_usada" : { "type" : "integer" },
+      "C_Driver_uso" : { "type" : "float" },
+      "D_Driver_uso" : { "type" : "float" },
+      "Registro" : {"type": "date", "format": "dd-MM-yyyy HH:mm:ss||dd-MM-yyyy||epoch_millis"}, 
+      "E_Driver_uso" : { "type" : "float" },
+      "F_Driver_uso" : { "type" : "float" },
+      "RAM_total" : { "type" : "integer" },
+      "RAM_utilizada" : { "type" : "integer" },
+      "RAM_utilizada%" : { "type" : "integer" },
+			"LastBoot" : {"type": "date", "format": "dd-MM-yyyy HH:mm:ss||dd-MM-yyyy||epoch_millis"}
+		}
+	}
+}
+
+PUT classificadoras
+{
+	"mappings" : {
+		"properties" : {
+    "arquivos_pendentes" : { "type" : "integer" },
+    "arquivos_pendentes_s" : {"type": "keyword"},
+    "tm_movim_arquivos" : { "type" : "integer" },
+    "tm_proces_arquivos" : { "type" : "integer" },
+    "tm_envio_nuoo" : { "type" : "integer" },
+    "tm_inicio_fim" : { "type" : "integer" },
+    "registro" : {"type": "date", "format": "dd-MM-yyyy HH:mm:ss||dd-MM-yyyy||epoch_millis"}
+		}
+	}
+}
+
+
+
+GET desk_streaming_finalizados/_search
+
+GET desk_streaming_aguardando/_search
+
+GET desk_streaming_completo/_search
+
+GET teste_grafana/_search
+
+GET shoehub/_search
+
+GET cpu_mem_disco/_search
+
+GET classificadoras/_search/
+
+
+#######################################
+
+DELETE desk_streaming_finalizados
+
+DELETE desk_streaming_aguardando
+
+DELETE desk_streaming_completo/
+
+DELETE teste_grafana
+
+DELETE shoehub
+
+DELETE cpu_mem_disco
+
+DELETE classificadoras/
+
+
+GET desk_finalizados/_ccr/info
+
+## BUSCA INDICE
+GET .kibana/_search
+{
+  "_source": ["index-pattern.title"],
+  "query": {
+    "term": {
+      "type": "index-pattern"
+    }
+  }
+}
+
+
+
+
+GET cpu_mem_disco/_count
+
+GET cpu_mem_disco
+
+GET cpu_mem_disco/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+GET chamados/_count
+
+
+
+GET .kibana/_search
+{
+  "_source": ["index-pattern.title"],
+  "query": {
+    "term": {
+      "type": "index-pattern"
+    }
+  }
+}
+
+GET cpu_mem_disco/_search?q=type:index-pattern&size=100
+
+GET chamados_contagem/_count
+
+GET test-index/_count
+
+PUT /test-index/_settings
+{
+    "index" : {
+        "refresh_interval" : null
+    }
+}
+
+GET .kibana/_search
+
+{
+  "_source": ["desk_finalizados"],
+  "query": {
+    "term": {
+      "type": "index-pattern"
+    }
+  }
+}
+
+GET chamados/_count
+
+DELETE chamados/
+
+# deletando por query
+
+POST /chamados2/_delete_by_query
+{
+  "query": {
+    "match": {
+      "_index" : "chamados2"
+    }
+  }
+}
+
+########################
+
+GET tweets-2021-04-13/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET shakespeare/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET shakespeare/_search
+{
+"query" : 
+{
+"match_phrase" : {"text_entry" : "to be or not to be"}
+}
+}
+
+DELETE shakespeare
+
+######################################################################
+
