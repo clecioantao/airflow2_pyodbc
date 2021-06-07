@@ -1,7 +1,6 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
-from airflow.operators.subdag import SubDagOperator
 from airflow.utils.task_group import TaskGroup
 
 from random import uniform
@@ -11,18 +10,27 @@ default_args = {
     'start_date': datetime(2020, 1, 1)
 }
 
-def _training_model():
+def _training_model(ti):
     accuracy = uniform(0.1, 10.0)
     print(f'model\'s accuracy: {accuracy}')
+    ti.xcom_push(key='model_accuracy', value=accuracy)
+    return accuracy
 
-def _choose_best_model():
+def _choose_best_model(ti):
     print('choose best model')
+    accuracies = ti.xcom_pull(key='model_accuracy', task_ids=[
+        'processing_tasks.training_model_a',
+        'processing_tasks.training_model_b',
+        'processing_tasks.training_model_c'
+    ])
+    print(accuracies)
 
 with DAG('xcom_dag', schedule_interval='@daily', default_args=default_args, catchup=False, tags=['curso', 'marc']) as dag:
 
     downloading_data = BashOperator(
         task_id='downloading_data',
-        bash_command='sleep 3'
+        bash_command='sleep 3',
+        do_xcom_push=False
     )
 
     with TaskGroup('processing_tasks') as processing_tasks:

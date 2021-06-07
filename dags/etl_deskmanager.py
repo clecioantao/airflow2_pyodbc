@@ -23,7 +23,7 @@ dag = DAG(
         'email': ['clecio.antao@gmail.com'],
         'email_on_failure': True,
     },
-    schedule_interval='* 22 * * *',
+    schedule_interval='0 22 * * *',
     start_date=days_ago(1),
     dagrun_timeout=timedelta(minutes=4),
     catchup=False,
