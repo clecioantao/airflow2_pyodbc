@@ -1,5 +1,0 @@
-{
-    "project": "ca-airflow-tutorial-demo",
-    "landing_bucket": "ca-logistics-landing-bucket",
-    "backup_bucket": "ca-logistics-backup-bucket"
-}

@@ -23,20 +23,23 @@ RUN apt-get update && \
         msodbcsql \
         mssql-tools \
         unixodbc-dev \
-        libssl1.0.0 
+        libssl1.0.0 \
+        vim
         
 RUN apt-get install -y --reinstall --upgrade \
         g++ \
         gcc && \
     /bin/bash -c "source ~/.bashrc" 
+    
 RUN pip install --upgrade \
         six \
         pyodbc \
         es_pandas \
         progressbar \
         progressbar2 \
-        pip install psutil \
-        pip install 'apache-airflow-providers-microsoft-mssql' \
+        psutil \
+        'apache-airflow-providers-microsoft-mssql' \
+        'apache.airflow.providers.http' \
         psycopg2-binary && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean 

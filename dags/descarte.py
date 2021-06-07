@@ -1,29 +1,9 @@
-# NOTAS
-# Testar tasks via linha de comando:
-# airflow tasks test <dag> <task> 2021-01-01
-# Verificar configuração do airflow:
-# airflow config get-value core sql_alchemy_conn
-# airflow config get-value core executor
-
-
-import os
-import pandas as pd
-import requests
-import json
-import sqlalchemy
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from datetime import datetime, timedelta
-
 def carrega_dados(params):
-
-    """
-    @author: Clecio Antao
-    @describe: Função generica que recebe o numero do relatorio e nome da tabela (vindos dos DAGs) que será criada no SQL Server, extraindo informações da API DeskManager
-    """
+          
+    import pandas as pd
+    import requests
+    import json
+    import sqlalchemy
             
     # CRIA ENGINE DE ORIGEM - CONNECT SQL SERVER
     engineorigem = sqlalchemy.create_engine('mssql+pyodbc://sa:Proteu690201@192.168.2.120/bi_integracao?driver=ODBC+Driver+17+for+SQL+Server')
@@ -105,7 +85,7 @@ def carrega_dados(params):
                 cs = cs
         else:
             print('quebrou: ', 'len(df.columns) ', len(df.columns) )
-            return  
+            break  
     
         # INSERE DADOS TABELA SQL SEVER
         if relatorios_pag == 0:
@@ -116,7 +96,7 @@ def carrega_dados(params):
         relatorios_pag = relatorios_pag + 5000
         contador =  contador + 1
 
-def envia_email(params):
+def envia_email():
 
     # FAZ CONEXÃO COM BANCO
     engineorigem = sqlalchemy.create_engine('mssql+pyodbc://sa:Proteu690201@192.168.2.120/bi_integracao?driver=ODBC+Driver+17+for+SQL+Server')
@@ -249,3 +229,4 @@ def envia_email(params):
     server.sendmail(from_addr, to_addrs, message.as_string())
     server.quit()
 
+##########################
