@@ -28,7 +28,7 @@ def _processing_user(ti):
 
     processed_user.to_csv('/opt/airflow/dags/processed_user.csv', index=None, header=True)
 
-with  DAG('user_processing', schedule_interval='@daily', default_args=default_args, catchup=False, tags=['curso', 'marc']) as dag:
+with  DAG('user_processing', schedule_interval='@daily', default_args=default_args, catchup=False, tags=['curso1', 'marc']) as dag:
 
     creating_table = SqliteOperator(
         task_id='creating_table',

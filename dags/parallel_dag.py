@@ -8,7 +8,7 @@ default_args = {
     'start_date' : datetime(2021, 1, 1)
 }
 
-with  DAG('parallel_dag', schedule_interval='@daily', default_args=default_args, catchup=False, tags=['curso', 'marc']) as dag:
+with  DAG('parallel_dag', schedule_interval='@daily', default_args=default_args, catchup=False, tags=['curso1', 'marc']) as dag:
 
     task_1 = BashOperator(
         task_id='task_1',
